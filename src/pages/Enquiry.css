@@ -1,0 +1,436 @@
+.enquiry-section {
+  position: relative;
+  padding: 110px 0;
+  background: #111820;
+  overflow: hidden;
+}
+
+/* Background design */
+
+.enquiry-section::before {
+  content: "";
+  position: absolute;
+  width: 650px;
+  height: 650px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.04);
+  top: -350px;
+  left: -250px;
+}
+
+.enquiry-section::after {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: rgba(232, 154, 0, 0.05);
+  right: -250px;
+  bottom: -250px;
+}
+
+
+/* =========================
+   MAIN WRAPPER
+========================= */
+
+.enquiry-wrapper {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+
+  gap: 70px;
+  align-items: center;
+}
+
+
+/* =========================
+   LEFT CONTENT
+========================= */
+
+.enquiry-info {
+  color: #ffffff;
+}
+
+.enquiry-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 18px;
+
+  color: #EF0404;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.enquiry-info h2 {
+  margin: 0 0 22px;
+
+  color: #ffffff;
+
+  font-size: clamp(38px, 5vw, 60px);
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  letter-spacing: -1.5px;
+}
+
+.enquiry-info h2 span {
+  display: block;
+  color: #EF0404;
+}
+
+.enquiry-info > p {
+  max-width: 480px;
+
+  color: #aeb7c0;
+
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.enquiry-info > p strong {
+  color: #ffffff;
+}
+
+
+/* =========================
+   POINTS
+========================= */
+
+.enquiry-points {
+  margin-top: 40px;
+}
+
+.enquiry-point {
+  display: flex;
+  gap: 15px;
+
+  margin-bottom: 25px;
+}
+
+.point-icon {
+  flex-shrink: 0;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(240, 161, 11, 0.12);
+
+  color: #EF0404;
+
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.enquiry-point h4 {
+  margin: 0 0 4px;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.enquiry-point p {
+  margin: 0;
+
+  color: #7f8a95;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.enquiry-form-wrapper {
+  position: relative;
+
+  padding: 42px;
+
+  background: #ffffff;
+
+  border-radius: 28px;
+
+  box-shadow:
+    0 35px 80px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Form top */
+
+.form-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  margin-bottom: 30px;
+}
+
+.form-top span {
+  color: #EF0404;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.form-top h3 {
+  margin: 6px 0 0;
+
+  color: #151d25;
+
+  font-size: 27px;
+  font-weight: 800;
+}
+
+.form-number {
+  color: rgba(232, 154, 0, 0.12);
+
+  font-size: 65px;
+  line-height: 0.8;
+
+  font-weight: 900;
+}
+
+
+/* =========================
+   INPUT
+========================= */
+
+.input-group-custom {
+  position: relative;
+}
+
+.input-group-custom label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #313a43;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.input-group-custom label span {
+  color: #EF0404;
+}
+
+.input-group-custom input,
+.input-group-custom textarea {
+  width: 100%;
+
+  padding: 14px 16px;
+
+  color: #17202a;
+
+  background: #f7f8f9;
+
+  border: 1px solid #e5e8eb;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  transition: 0.3s ease;
+}
+
+.input-group-custom input {
+  height: 50px;
+}
+
+.input-group-custom textarea {
+  min-height: 130px;
+
+  resize: vertical;
+}
+
+.input-group-custom input::placeholder,
+.input-group-custom textarea::placeholder {
+  color: #a2a9b0;
+}
+
+.input-group-custom input:focus,
+.input-group-custom textarea:focus {
+  background: #ffffff;
+
+  border-color: #EF0404;
+
+  box-shadow:
+    0 0 0 3px rgba(228, 154, 10, 0.08);
+}
+
+
+/* =========================
+   SUBMIT
+========================= */
+
+.enquiry-submit {
+  width: 100%;
+  height: 58px;
+
+  margin-top: 8px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+
+  border: 0;
+  border-radius: 10px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EF0404,
+      #dc8500
+    );
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 25px rgba(220, 133, 0, 0.22);
+
+  transition: 0.35s ease;
+}
+
+.enquiry-submit span {
+  font-size: 20px;
+
+  transition: 0.35s ease;
+}
+
+.enquiry-submit:hover:not(:disabled) {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 35px rgba(220, 133, 0, 0.3);
+}
+
+.enquiry-submit:hover span {
+  transform: translate(4px, -4px);
+}
+
+.enquiry-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+
+/* =========================
+   LOADER
+========================= */
+
+.submit-loader {
+  width: 18px !important;
+  height: 18px;
+
+  border: 2px solid rgba(255,255,255,0.35);
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: submitSpin 0.7s linear infinite;
+}
+
+@keyframes submitSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* =========================
+   SUCCESS / ERROR
+========================= */
+
+.form-success,
+.form-error {
+  padding: 13px 15px;
+
+  margin-bottom: 20px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.form-success {
+  background: #ecfdf3;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.form-error {
+  background: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+
+  .enquiry-wrapper {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .enquiry-info {
+    max-width: 700px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .enquiry-section {
+    padding: 70px 0;
+  }
+
+  .enquiry-info h2 {
+    font-size: 40px;
+  }
+
+  .enquiry-form-wrapper {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .form-top h3 {
+    font-size: 23px;
+  }
+
+  .form-number {
+    font-size: 45px;
+  }
+
+}

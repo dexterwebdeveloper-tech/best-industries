@@ -1,0 +1,581 @@
+/* =========================
+   CONTACT BREADCRUMB
+========================= */
+.contact-icon {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f58220;
+}
+
+.contact-icon i {
+  font-size: 32px;
+}
+
+.contact-breadcrumb {
+  position: relative;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(10, 20, 30, 0.92),
+      rgba(10, 20, 30, 0.68)
+    ),
+    url("../images/2.png") center center / cover no-repeat;
+  overflow: hidden;
+}
+
+.contact-breadcrumb::before {
+  content: "";
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.breadcrumb-content {
+  position: relative;
+  z-index: 2;
+  padding: 60px 0;
+}
+
+.breadcrumb-subtitle {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #f58220;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.breadcrumb-content h1 {
+  margin: 0 0 15px;
+  color: #fff;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.breadcrumb-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 15px;
+}
+
+.breadcrumb-nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.breadcrumb-nav a:hover {
+  color: #f58220;
+}
+
+.breadcrumb-nav span:first-of-type {
+  color: #f58220;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+  .contact-breadcrumb {
+    min-height: 240px;
+  }
+
+  .breadcrumb-content {
+    padding: 45px 0;
+  }
+
+  .breadcrumb-content h1 {
+    font-size: 38px;
+  }
+
+  .breadcrumb-breadcrumb {
+    font-size: 14px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-section {
+  position: relative;
+  padding: 100px 0;
+  overflow: hidden;
+  background: #f4f6f8;
+}
+
+/* Background decoration */
+
+.contact-section::before {
+  content: "";
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 1px solid rgba(20, 30, 40, 0.06);
+  top: -250px;
+  left: -200px;
+}
+
+.contact-section::after {
+  content: "";
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  border: 1px solid rgba(20, 30, 40, 0.05);
+  right: -300px;
+  bottom: -300px;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.contact-heading {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto 55px;
+  text-align: center;
+}
+
+.contact-eyebrow {
+  display: inline-block;
+  margin-bottom: 15px;
+  color: #EF0404;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.contact-heading h2 {
+  margin: 0 0 18px;
+  color: #111827;
+  font-size: clamp(36px, 5vw, 58px);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+
+.contact-heading h2 span {
+  display: block;
+  color: #EF0404;
+}
+
+.contact-heading p {
+  max-width: 620px;
+  margin: auto;
+  color: #68717d;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* =========================
+   CONTACT CARD
+========================= */
+
+.contact-card {
+  position: relative;
+  min-height: 270px;
+  padding: 35px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 26px;
+
+  box-shadow:
+    0 20px 50px rgba(20, 30, 40, 0.07);
+
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease,
+    background 0.4s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-10px);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 30px 70px rgba(20, 30, 40, 0.13);
+}
+
+
+/* Giant number */
+
+.card-bg-number {
+  position: absolute;
+  right: 15px;
+  top: -25px;
+
+  font-size: 115px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  color: rgba(232, 154, 0, 0.055);
+
+  pointer-events: none;
+
+  transition: 0.4s ease;
+}
+
+.contact-card:hover .card-bg-number {
+  color: rgba(232, 154, 0, 0.1);
+  transform: translateX(-8px);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.contact-icon {
+  position: relative;
+  z-index: 2;
+
+  width: 65px;
+  height: 65px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 28px;
+
+  color: #ffffff;
+
+  background:
+    linear-gradient(
+      135deg,
+      #EF0404,
+      #df8200
+    );
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 12px 25px rgba(226, 145, 0, 0.25);
+
+  transition: 0.4s ease;
+}
+
+.contact-icon svg {
+  width: 27px;
+  height: 27px;
+}
+
+.contact-card:hover .contact-icon {
+  transform: rotate(-7deg) scale(1.08);
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.contact-card-content {
+  position: relative;
+  z-index: 2;
+}
+
+.contact-card-content > span {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #EF0404;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.contact-card-content h3 {
+  margin: 0 0 12px;
+
+  color: #17202a;
+
+  font-size: 22px;
+  font-weight: 750;
+}
+
+.contact-card-content a {
+  color: #555f6c;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.contact-card-content a:hover {
+  color: #EF0404;
+}
+
+.contact-card-content p {
+  margin: 0;
+
+  color: #626c78;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================
+   ARROW
+========================= */
+
+.card-arrow {
+  position: absolute;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f3f5;
+
+  color: #1d2731;
+
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.contact-card:hover .card-arrow {
+  background: #EF0404;
+  color: #ffffff;
+
+  transform: translate(4px, -4px);
+}
+
+
+/* =========================
+   MAP SECTION
+========================= */
+
+.map-section {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 70px;
+
+  padding: 14px;
+
+  background: #ffffff;
+
+  border-radius: 30px;
+
+  box-shadow:
+    0 25px 70px rgba(20, 30, 40, 0.12);
+}
+
+
+/* Map heading */
+
+.map-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 22px 28px;
+}
+
+.map-header span {
+  color: #EF0404;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.map-header h3 {
+  margin: 5px 0 0;
+
+  color: #17202a;
+
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.map-location-icon {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #17202a;
+  color: #ffffff;
+}
+
+.map-location-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* Map */
+
+.map-container {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+}
+
+.map-container iframe {
+  display: block;
+
+  width: 100%;
+  height: 450px;
+
+  border: 0;
+
+  filter: grayscale(70%);
+
+  transition: 0.5s ease;
+}
+
+.map-container:hover iframe {
+  filter: grayscale(10%);
+}
+
+
+/* Floating map label */
+
+.map-label {
+  position: absolute;
+
+  left: 25px;
+  bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 16px 20px;
+
+  background: rgba(18, 25, 32, 0.94);
+
+  border-left: 4px solid #EF0404;
+
+  border-radius: 10px;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.map-label strong {
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.map-label span {
+  margin-top: 5px;
+
+  color: #cbd1d7;
+
+  font-size: 11px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 767px) {
+
+  .contact-section {
+    padding: 70px 0;
+  }
+
+  .contact-heading {
+    margin-bottom: 35px;
+  }
+
+  .contact-heading h2 {
+    font-size: 38px;
+  }
+
+  .contact-card {
+    min-height: 240px;
+    padding: 30px;
+  }
+
+  .map-section {
+    margin-top: 45px;
+    border-radius: 20px;
+  }
+
+  .map-header {
+    padding: 18px;
+  }
+
+  .map-header h3 {
+    font-size: 22px;
+  }
+
+  .map-container {
+    border-radius: 16px;
+  }
+
+  .map-container iframe {
+    height: 350px;
+  }
+
+  .map-label {
+    left: 15px;
+    bottom: 15px;
+  }
+}

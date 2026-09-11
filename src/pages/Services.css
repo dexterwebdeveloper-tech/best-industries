@@ -1,0 +1,802 @@
+/* =====================================================
+   BEST INDUSTRIES - SERVICES
+===================================================== */
+
+.bi-services {
+  position: relative;
+  width: 100%;
+
+  padding: 110px 0 120px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      135deg,
+      #f1f3f4 0%,
+      #e7eaec 48%,
+      #f4f5f5 100%
+    );
+
+  color: #20282d;
+}
+
+
+/* subtle background */
+
+.bi-services::before {
+  content: "";
+
+  position: absolute;
+
+  width: 650px;
+  height: 650px;
+
+  right: -250px;
+  top: -200px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(39, 48, 54, 0.06);
+
+  box-shadow:
+    0 0 0 80px rgba(39,48,54,.025),
+    0 0 0 160px rgba(39,48,54,.018);
+
+  pointer-events: none;
+}
+
+
+.bi-services::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: #03A3FB;
+}
+
+
+/* =====================================================
+   CONTAINER
+===================================================== */
+
+.bi-services-container {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.bi-services-heading {
+  display: grid;
+
+  grid-template-columns: 1.1fr .9fr;
+
+  gap: 70px;
+
+  align-items: end;
+
+  margin-bottom: 42px;
+}
+
+
+.bi-small-label {
+  position: relative;
+
+  display: inline-block;
+
+  padding-left: 34px;
+
+  margin-bottom: 18px;
+
+  color: #03A3FB;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 2.5px;
+}
+
+
+.bi-small-label::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 50%;
+
+  width: 23px;
+  height: 2px;
+
+  transform: translateY(-50%);
+
+  background: #03A3FB;
+}
+
+
+.bi-services-title h2 {
+  margin: 0;
+
+  color: #252e33;
+
+  font-size: clamp(48px, 6vw, 76px);
+
+  line-height: .95;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+
+.bi-services-title h2 span {
+  color: #03A3FB;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.bi-services-intro {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 22px;
+
+  padding-bottom: 8px;
+}
+
+
+.bi-intro-number {
+  color: #03A3FB;
+
+  font-size: 52px;
+
+  line-height: .8;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+
+.bi-services-intro p {
+  max-width: 390px;
+
+  margin: 0;
+
+  color: #667177;
+
+  font-size: 14px;
+
+  line-height: 1.85;
+}
+
+
+/* =====================================================
+   DIVIDER
+===================================================== */
+
+.bi-services-line {
+  width: 100%;
+
+  height: 1px;
+
+  margin-bottom: 38px;
+
+  background: #ccd1d3;
+
+  position: relative;
+}
+
+
+.bi-services-line span {
+  display: block;
+
+  width: 75px;
+
+  height: 3px;
+
+  background: #03A3FB;
+
+  position: absolute;
+
+  left: 0;
+  top: -1px;
+}
+
+
+/* =====================================================
+   SERVICE GRID
+===================================================== */
+
+.bi-services-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+
+/* =====================================================
+   CARD
+===================================================== */
+
+.bi-service-card {
+  position: relative;
+
+  overflow: hidden;
+
+  border: 1px solid #d7dcde;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 8px 25px rgba(38,47,53,.05);
+
+  transition:
+    transform .4s ease,
+    box-shadow .4s ease,
+    border-color .4s ease;
+}
+
+
+.bi-service-card:hover {
+  transform: translateY(-8px);
+
+  border-color: #03A3FB;
+
+  box-shadow:
+    0 22px 45px rgba(38,47,53,.13);
+}
+
+
+/* =====================================================
+   FEATURED CARD
+===================================================== */
+
+.bi-service-featured {
+  grid-column: span 2;
+
+  display: grid;
+
+  grid-template-columns: 1.05fr .95fr;
+}
+
+
+/* =====================================================
+   IMAGE
+===================================================== */
+
+.bi-service-image {
+  position: relative;
+
+  height: 235px;
+
+  overflow: hidden;
+
+  background: #59636a;
+}
+
+
+.bi-service-featured .bi-service-image {
+  height: 100%;
+
+  min-height: 380px;
+}
+
+
+.bi-service-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform .7s ease;
+}
+
+
+.bi-service-card:hover .bi-service-image img {
+  transform: scale(1.07);
+}
+
+
+.bi-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(20,28,32,.05),
+      rgba(20,28,32,.55)
+    );
+}
+
+
+.bi-service-number {
+  position: absolute;
+
+  left: 20px;
+  bottom: 17px;
+
+  color: #ffffff;
+
+  font-size: 34px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+
+/* =====================================================
+   CARD CONTENT
+===================================================== */
+
+.bi-service-content {
+  padding: 25px 25px 22px;
+
+  min-height: 235px;
+
+  display: flex;
+
+  flex-direction: column;
+}
+
+
+.bi-service-featured .bi-service-content {
+  min-height: 380px;
+
+  padding: 38px;
+}
+
+
+.bi-service-top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+.bi-service-label {
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.8px;
+}
+
+
+.bi-service-icon {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 29px;
+  height: 29px;
+
+  border: 1px solid #d9dddf;
+
+  border-radius: 50%;
+
+  color: #667177;
+
+  font-size: 14px;
+
+  transition: .3s ease;
+}
+
+
+.bi-service-card:hover .bi-service-icon {
+  background: #03A3FB;
+
+  border-color: #03A3FB;
+
+  color: #fff;
+
+  transform: translate(2px,-2px);
+}
+
+
+.bi-service-content h3 {
+  margin: 13px 0 10px;
+
+  color: #252e33;
+
+  font-size: 23px;
+
+  line-height: 1.12;
+
+  font-weight: 800;
+
+  letter-spacing: -.5px;
+}
+
+
+.bi-service-featured .bi-service-content h3 {
+  font-size: 34px;
+
+  max-width: 330px;
+}
+
+
+.bi-service-content p {
+  margin: 0;
+
+  color: #6e797f;
+
+  font-size: 12px;
+
+  line-height: 1.75;
+}
+
+
+.bi-service-featured .bi-service-content p {
+  max-width: 400px;
+
+  font-size: 13px;
+
+  line-height: 1.85;
+}
+
+
+/* =====================================================
+   CARD BOTTOM
+===================================================== */
+
+.bi-service-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-top: auto;
+
+  padding-top: 20px;
+}
+
+
+.bi-service-bottom > span {
+  color: #90999e;
+
+  font-size: 8px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  transition: .3s ease;
+}
+
+
+.bi-service-card:hover
+.bi-service-bottom > span {
+  color: #03A3FB;
+}
+
+
+.bi-service-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 34px;
+  height: 34px;
+
+  border-radius: 50%;
+
+  background: #eef0f1;
+
+  color: #4c585e;
+
+  font-size: 16px;
+
+  transition: .3s ease;
+}
+
+
+.bi-service-card:hover .bi-service-arrow {
+  background: #03A3FB;
+
+  color: #fff;
+
+  transform: translateX(4px);
+}
+
+
+/* =====================================================
+   FOOTER CTA
+===================================================== */
+
+.bi-services-footer {
+  display: grid;
+
+  grid-template-columns: 1.2fr .8fr auto;
+
+  gap: 55px;
+
+  align-items: center;
+
+  margin-top: 65px;
+
+  padding: 38px 42px;
+
+  border-radius: 5px;
+
+  background: #283238;
+
+  box-shadow:
+    0 18px 40px rgba(25,33,38,.12);
+}
+
+
+.bi-footer-heading > span {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+
+.bi-footer-heading h3 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 29px;
+
+  line-height: 1.15;
+
+  font-weight: 700;
+}
+
+
+.bi-footer-heading h3 strong {
+  color: #03A3FB;
+}
+
+
+.bi-services-footer > p {
+  margin: 0;
+
+  color: #aab2b6;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+
+.bi-services-footer > a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 13px;
+
+  white-space: nowrap;
+
+  padding: 14px 19px;
+
+  border: 1px solid #03A3FB;
+
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 1.4px;
+
+  text-decoration: none;
+
+  transition: .3s ease;
+}
+
+
+.bi-services-footer > a span {
+  font-size: 15px;
+
+  transition: .3s ease;
+}
+
+
+.bi-services-footer > a:hover {
+  background: #03A3FB;
+
+  color: #fff;
+}
+
+
+.bi-services-footer > a:hover span {
+  transform: translate(3px,-3px);
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 991px) {
+
+  .bi-services-heading {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+
+  .bi-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .bi-service-featured {
+    grid-column: span 2;
+  }
+
+
+  .bi-services-footer {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 30px;
+  }
+
+
+  .bi-services-footer > a {
+    justify-self: start;
+  }
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 767px) {
+
+  .bi-services {
+    padding: 75px 0 85px;
+  }
+
+
+  .bi-services-container {
+    width: min(100% - 30px, 1180px);
+  }
+
+
+  .bi-services-heading {
+    gap: 25px;
+  }
+
+
+  .bi-services-title h2 {
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .bi-services-intro {
+    gap: 15px;
+  }
+
+
+  .bi-intro-number {
+    font-size: 42px;
+  }
+
+
+  .bi-services-intro p {
+    font-size: 12px;
+  }
+
+
+  /* Grid */
+
+  .bi-services-grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+
+  .bi-service-featured {
+    grid-column: span 1;
+
+    display: block;
+  }
+
+
+  .bi-service-featured .bi-service-image {
+    height: 260px;
+
+    min-height: 260px;
+  }
+
+
+  .bi-service-featured .bi-service-content {
+    min-height: 280px;
+
+    padding: 28px 23px;
+  }
+
+
+  .bi-service-featured
+  .bi-service-content h3 {
+    font-size: 29px;
+  }
+
+
+  .bi-service-image {
+    height: 215px;
+  }
+
+
+  /* Footer */
+
+  .bi-services-footer {
+    display: block;
+
+    margin-top: 45px;
+
+    padding: 30px 25px;
+  }
+
+
+  .bi-footer-heading h3 {
+    font-size: 28px;
+  }
+
+
+  .bi-services-footer > p {
+    margin: 22px 0;
+  }
+
+}

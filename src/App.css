@@ -1,38 +1,539 @@
-.App {
+a{
+    text-decoration: none !important;
+}
+
+.bgg-darkk{
+    background-color: red;
+}
+ul{
+    list-style: none !important;
+}
+
+.hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    align-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    /* Show the complete image across the hero */
+    background-size: 100% 100%;
+
+    height: auto;
+
+    overflow: hidden;
+
+    transition: background-image 0.8s ease-in-out;
+}
+
+
+/* ==========================================
+   SLIDER ARROWS
+========================================== */
+
+.hero-slider-arrow {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.6);
+
+    border-radius: 50%;
+
+    background: rgba(0, 0, 0, 0.35);
+
+    color: #fff;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    z-index: 99;
+
+    transition: all 0.3s ease;
+}
+
+
+/* Left arrow */
+
+.hero-slider-prev {
+    left: 30px;
+}
+
+
+/* Right arrow */
+
+.hero-slider-next {
+    right: 30px;
+}
+
+
+/* Hover */
+
+.hero-slider-arrow:hover {
+    background: #fff;
+
+    color: #000;
+
+    border-color: #fff;
+
+    transform: translateY(-50%) scale(1.05);
+}
+
+
+/* ==========================================
+   DOTS
+========================================== */
+
+.hero-slider-dots {
+    position: absolute;
+
+    left: 50%;
+    bottom: 35px;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+
+    z-index: 99;
+}
+
+
+.hero-slider-dots button {
+    width: 12px;
+    height: 12px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+
+.hero-slider-dots button.active {
+    width: 30px;
+
+    border-radius: 20px;
+
+    background: #fff;
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 767px) {
+
+    .hero {
+        min-height: 700px;
+
+        /*
+         * On mobile, cover usually looks better
+         * because 100% 100% can distort the image.
+         */
+        background-size: cover;
+    }
+
+
+    .hero-slider-arrow {
+        width: 42px;
+        height: 42px;
+
+        font-size: 14px;
+    }
+
+
+    .hero-slider-prev {
+        left: 10px;
+    }
+
+
+    .hero-slider-next {
+        right: 10px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .logoo {
+        height: auto;
+        width: 120px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .navbar-nav .nav-item {
+        border-bottom: 1px solid #c92227;
+    }
+}
+
+
+.nav-link {
+    color: #c92227 !important;
+}
+
+
+
+
+
+
+.darkcolorr {
+    color: #c92227;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================
+   BLOG SECTION
+================================ */
+
+.our-blog {
+  padding: 10px 0;
+  background: #f7f9fc;
+}
+
+/* Section Heading */
+.our-blog .section-title {
+  max-width: 850px;
+  margin: 0 auto 55px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.our-blog .section-sub-title {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #e53935;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.our-blog .section-title h2 {
+  margin-bottom: 18px;
+  color: #123b6d;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1.2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.our-blog .section-title p {
+  max-width: 750px;
+  margin: 0 auto;
+  color: #667085;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+
+/* ================================
+   BLOG CARD
+================================ */
+
+.our-blog .post-item {
+  height: 100%;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e4ebf3;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(18, 59, 109, 0.07);
+  transition: all 0.35s ease;
+}
+
+.our-blog .post-item:hover {
+  transform: translateY(-8px);
+  border-color: #c9dff5;
+  box-shadow: 0 15px 35px rgba(18, 59, 109, 0.13);
+}
+
+
+/* ================================
+   FEATURED IMAGE
+================================ */
+
+.our-blog .post-featured-image {
+  position: relative;
+  overflow: hidden;
+  height: 260px;
+  background: #eef5fb;
+}
+
+.our-blog .post-featured-image figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.our-blog .post-featured-image img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.our-blog .post-item:hover .post-featured-image > figure > img {
+  transform: scale(1.06);
+}
+
+
+/* ================================
+   READ MORE BUTTON
+================================ */
+
+.our-blog .post-item-btn {
+  position: absolute;
+  right: 18px;
+  bottom: 18px;
+  z-index: 2;
+}
+
+.our-blog .post-item-btn a {
+  width: 48px;
+  height: 48px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  background: #e53935;
+  border-radius: 50%;
+
+  box-shadow: 0 6px 18px rgba(229, 57, 53, 0.28);
+
+  transition: all 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.our-blog .post-item-btn a:hover {
+  background: #123b6d;
+  transform: rotate(45deg);
+  box-shadow: 0 8px 20px rgba(18, 59, 109, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.our-blog .post-item-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+
+/* ================================
+   BLOG BODY
+================================ */
+
+.our-blog .post-item-body {
+  padding: 25px 25px 28px;
+}
+
+
+/* Blog Meta */
+
+.our-blog .post-item-meta {
+  margin-bottom: 12px;
+}
+
+.our-blog .post-item-meta ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.our-blog .post-item-meta li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #e53935;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.our-blog .post-item-meta i {
+  color: #123b6d;
+  font-size: 14px;
+}
+
+
+/* Blog Title */
+
+.our-blog .post-item-content h2 {
+  margin: 0;
+  font-size: 23px;
+  line-height: 1.35;
+}
+
+.our-blog .post-item-content h2 a {
+  color: #123b6d;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.our-blog .post-item-content h2 a:hover {
+  color: #e53935;
+}
+
+
+/* ================================
+   FOOTER CTA
+================================ */
+
+.our-blog .section-footer-text {
+  margin-top: 25px;
+  padding: 22px 25px;
+
+  text-align: center;
+
+  background: #eef5fb;
+  border-left: 4px solid #e53935;
+  border-radius: 6px;
+}
+
+.our-blog .section-footer-text p {
+  margin: 0;
+  color: #5f6f82;
+  font-size: 15px;
+}
+
+.our-blog .section-footer-text a {
+  color: #123b6d;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.our-blog .section-footer-text a:hover {
+  color: #e53935;
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 991px) {
+
+  .our-blog {
+    padding: 70px 0;
   }
-  to {
-    transform: rotate(360deg);
+
+  .our-blog .section-title h2 {
+    font-size: 36px;
+  }
+
+  .our-blog .post-featured-image {
+    height: 240px;
   }
 }
+
+
+@media (max-width: 767px) {
+
+  .our-blog {
+    padding: 55px 0;
+  }
+
+  .our-blog .section-title {
+    margin-bottom: 35px;
+  }
+
+  .our-blog .section-title h2 {
+    font-size: 30px;
+  }
+
+  .our-blog .section-title p {
+    font-size: 14px;
+  }
+
+  .our-blog .post-featured-image {
+    height: 220px;
+  }
+
+  .our-blog .post-item-body {
+    padding: 20px;
+  }
+
+  .our-blog .post-item-content h2 {
+    font-size: 20px;
+  }
+
+}
+
+
+.darkcolorrr{
+    color: red;
+}
+
+
+
+
+
+
+/* Space between logo and menu */
+.main-navigation .navbar-brand {
+  margin-right: 70px;
+}
+
+/* Menu spacing */
+.main-navigation .navbar-nav {
+  gap: 8px;
+}
+
+@media (max-width: 991px) {
+  .main-navigation .navbar-brand {
+    margin-right: 0;
+  }
+
+  .main-navigation .navbar-nav {
+    gap: 0;
+  }
+}
+
+
+
+
+

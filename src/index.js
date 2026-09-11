@@ -1,6 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import './css/custom.css';
+import './css/animate.css';
+import './css/fonts.css';
+import './css/magnific-popup.css';
+import './css/mousecursor.css';
+
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

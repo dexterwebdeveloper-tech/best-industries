@@ -1,0 +1,641 @@
+.catalog-section {
+  position: relative;
+  padding: 110px 0;
+  overflow: hidden;
+  background: #f5f6f7;
+}
+
+/* =================================
+   BACKGROUND
+================================= */
+
+.catalog-bg-text {
+  position: absolute;
+
+  top: 30px;
+  right: -30px;
+
+  font-size: 180px;
+  line-height: 1;
+
+  font-weight: 900;
+
+  color: rgba(20, 28, 35, 0.025);
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+
+/* =================================
+   HEADER
+================================= */
+
+.catalog-header {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  align-items: end;
+
+  margin-bottom: 55px;
+}
+
+.catalog-eyebrow {
+  display: inline-block;
+
+  margin-bottom: 15px;
+
+  color: #EF0404;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.catalog-title h2 {
+  margin: 0;
+
+  color: #17202a;
+
+  font-size: clamp(45px, 6vw, 70px);
+
+  line-height: .95;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+.catalog-title h2 strong {
+  color: #EF0404;
+}
+
+.catalog-intro {
+  display: flex;
+
+  gap: 20px;
+
+  align-items: flex-start;
+}
+
+.catalog-line {
+  flex-shrink: 0;
+
+  width: 4px;
+  height: 75px;
+
+  background: #EF0404;
+}
+
+.catalog-intro p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #69737d;
+
+  font-size: 15px;
+
+  line-height: 1.9;
+}
+
+
+/* =================================
+   FILTER
+================================= */
+
+.catalog-filter {
+  position: relative;
+  z-index: 2;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-bottom: 35px;
+
+  padding-bottom: 20px;
+
+  border-bottom: 1px solid #dfe3e6;
+}
+
+.catalog-filter button {
+  padding: 10px 18px;
+
+  border: 1px solid #dfe3e6;
+
+  border-radius: 50px;
+
+  background: transparent;
+
+  color: #65707a;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.catalog-filter button:hover {
+  border-color: #EF0404;
+
+  color: #EF0404;
+}
+
+.catalog-filter button.active {
+  background: #EF0404;
+
+  border-color: #EF0404;
+
+  color: #ffffff;
+
+  box-shadow:
+    0 8px 20px rgba(223, 149, 9, .18);
+}
+
+
+/* =================================
+   GRID
+================================= */
+
+.catalog-grid {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =================================
+   ITEM
+================================= */
+
+.catalog-item {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  border-radius: 15px;
+
+  border: 1px solid #e6e9eb;
+
+  box-shadow:
+    0 12px 35px rgba(20, 30, 40, .055);
+
+  transition:
+    transform .4s ease,
+    box-shadow .4s ease;
+}
+
+.catalog-item:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 55px rgba(20, 30, 40, .12);
+}
+
+
+/* =================================
+   IMAGE
+================================= */
+
+.catalog-image {
+  position: relative;
+
+  height: 255px;
+
+  overflow: hidden;
+
+  background: #e8ebed;
+}
+
+.catalog-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform .7s ease;
+}
+
+.catalog-item:hover .catalog-image img {
+  transform: scale(1.07);
+}
+
+
+/* Image dark gradient */
+
+.catalog-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,.05),
+      transparent 45%,
+      rgba(0,0,0,.65)
+    );
+}
+
+
+/* Number */
+
+.catalog-index {
+  position: absolute;
+
+  top: 18px;
+  left: 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border-radius: 50%;
+
+  background: rgba(15, 22, 28, .75);
+
+  color: #ffffff;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  backdrop-filter: blur(8px);
+}
+
+
+/* Category */
+
+.catalog-category {
+  position: absolute;
+
+  right: 18px;
+  bottom: 18px;
+
+  padding: 7px 11px;
+
+  border-radius: 4px;
+
+  background: #EF0404;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  font-weight: 800;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+}
+
+
+/* =================================
+   CONTENT
+================================= */
+
+.catalog-content {
+  padding: 25px;
+}
+
+.catalog-content h3 {
+  margin: 0 0 9px;
+
+  color: #17202a;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+.catalog-content p {
+  min-height: 48px;
+
+  margin: 0 0 20px;
+
+  color: #737d86;
+
+  font-size: 13px;
+
+  line-height: 1.65;
+}
+
+
+/* View button */
+
+.catalog-view {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  padding: 0;
+
+  border: 0;
+
+  background: transparent;
+
+  color: #17202a;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  text-align: left;
+}
+
+.catalog-view b {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f1f3f4;
+
+  color: #EF0404;
+
+  font-size: 17px;
+
+  transition: .3s ease;
+}
+
+.catalog-item:hover .catalog-view b {
+  background: #EF0404;
+
+  color: #ffffff;
+
+  transform: translate(3px, -3px);
+}
+
+
+/* =================================
+   CTA
+================================= */
+
+.catalog-cta {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 35px;
+
+  margin-top: 70px;
+
+  padding: 40px 45px;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background: #131b22;
+
+  color: #ffffff;
+}
+
+.catalog-cta::after {
+  content: "";
+
+  position: absolute;
+
+  width: 300px;
+  height: 300px;
+
+  right: -100px;
+  top: -100px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+    0 0 0 50px rgba(255,255,255,.02),
+    0 0 0 100px rgba(255,255,255,.015);
+}
+
+
+/* Big number */
+
+.cta-number {
+  position: relative;
+  z-index: 2;
+
+  color: #EF0404;
+
+  font-size: 55px;
+
+  line-height: 1;
+
+  font-weight: 900;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+
+  flex: 1;
+}
+
+.cta-content > span {
+  color: #EF0404;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+}
+
+.cta-content h3 {
+  margin: 7px 0;
+
+  font-size: 27px;
+
+  font-weight: 800;
+}
+
+.cta-content h3 strong {
+  color: #EF0404;
+}
+
+.cta-content p {
+  max-width: 500px;
+
+  margin: 0;
+
+  color: #929ca5;
+
+  font-size: 13px;
+
+  line-height: 1.6;
+}
+
+
+/* CTA Button */
+
+.catalog-cta-button {
+  position: relative;
+  z-index: 2;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 16px 22px;
+
+  border-radius: 7px;
+
+  background: #EF0404;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  transition: .3s ease;
+}
+
+.catalog-cta-button span {
+  font-size: 18px;
+}
+
+.catalog-cta-button:hover {
+  background: #ffffff;
+
+  color: #17202a;
+
+  transform: translateY(-3px);
+}
+
+
+/* =================================
+   TABLET
+================================= */
+
+@media (max-width: 991px) {
+
+  .catalog-header {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .catalog-grid {
+    grid-template-columns:
+      repeat(2, 1fr);
+  }
+
+  .catalog-cta {
+    flex-wrap: wrap;
+  }
+
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 767px) {
+
+  .catalog-section {
+    padding: 70px 0;
+  }
+
+  .catalog-bg-text {
+    font-size: 90px;
+  }
+
+  .catalog-title h2 {
+    font-size: 48px;
+  }
+
+  .catalog-filter {
+    flex-wrap: nowrap;
+
+    overflow-x: auto;
+
+    padding-bottom: 15px;
+  }
+
+  .catalog-filter button {
+    flex-shrink: 0;
+  }
+
+  .catalog-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .catalog-image {
+    height: 240px;
+  }
+
+  .catalog-cta {
+    padding: 30px 25px;
+
+    gap: 20px;
+  }
+
+  .cta-number {
+    font-size: 40px;
+  }
+
+  .cta-content h3 {
+    font-size: 24px;
+  }
+
+  .catalog-cta-button {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+}

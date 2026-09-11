@@ -1,0 +1,798 @@
+.careers-section {
+  background: #f4f6f8;
+  color: #17202a;
+  overflow: hidden;
+}
+
+
+/* =================================
+   HERO
+================================= */
+
+.career-hero {
+  position: relative;
+  min-height: 650px;
+
+  display: flex;
+  align-items: center;
+
+  background: #111820;
+  overflow: hidden;
+}
+
+.career-grid {
+  position: absolute;
+  inset: 0;
+
+  opacity: 0.18;
+
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,.08) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,.08) 1px,
+      transparent 1px
+    );
+
+  background-size: 70px 70px;
+
+  mask-image:
+    linear-gradient(
+      to right,
+      black,
+      transparent
+    );
+}
+
+.career-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  right: -250px;
+  top: -180px;
+
+  border-radius: 50%;
+
+  background: rgba(231, 153, 8, .09);
+}
+
+.career-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.career-label {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #EF0404;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.career-hero h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: clamp(55px, 7vw, 88px);
+
+  line-height: .98;
+
+  font-weight: 800;
+
+  letter-spacing: -3px;
+}
+
+.career-hero h1 span {
+  color: #EF0404;
+}
+
+.career-hero-content p {
+  max-width: 570px;
+
+  margin: 30px 0;
+
+  color: #aab3bb;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+}
+
+.career-main-btn {
+  display: inline-flex;
+
+  align-items: center;
+  gap: 15px;
+
+  height: 56px;
+
+  padding: 0 25px;
+
+  border: 0;
+  border-radius: 8px;
+
+  background: #EF0404;
+
+  color: #111820;
+
+  font-size: 13px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.career-main-btn span {
+  font-size: 20px;
+}
+
+.career-main-btn:hover {
+  background: #ffffff;
+
+  transform: translateY(-3px);
+}
+
+
+/* =================================
+   HERO VISUAL
+================================= */
+
+.career-visual {
+  position: relative;
+
+  height: 500px;
+}
+
+.visual-circle {
+  position: absolute;
+
+  width: 390px;
+  height: 390px;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255,255,255,.15);
+
+  box-shadow:
+    0 0 0 70px rgba(255,255,255,.025),
+    0 0 0 140px rgba(255,255,255,.015);
+}
+
+.visual-card {
+  position: absolute;
+
+  padding: 20px 25px;
+
+  background: rgba(255,255,255,.08);
+
+  border: 1px solid rgba(255,255,255,.13);
+
+  backdrop-filter: blur(12px);
+
+  color: #fff;
+
+  border-radius: 5px;
+}
+
+.visual-card strong {
+  display: block;
+
+  color: #EF0404;
+
+  font-size: 22px;
+}
+
+.visual-card span {
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #aab3bb;
+}
+
+.visual-card-one {
+  top: 100px;
+  right: 20px;
+
+  transform: rotate(5deg);
+}
+
+.visual-card-two {
+  bottom: 100px;
+  left: 15px;
+
+  transform: rotate(-5deg);
+}
+
+.visual-number {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  color: rgba(255,255,255,.08);
+
+  font-size: 220px;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+
+/* =================================
+   INTRO
+================================= */
+
+.career-intro {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 80px;
+
+  padding: 110px 0 60px;
+
+  align-items: end;
+}
+
+.intro-left span,
+.jobs-heading span,
+.application-content > span {
+  color: #03A3FB;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+}
+
+.intro-left h2 {
+  margin: 15px 0 0;
+
+  font-size: 55px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.intro-left strong {
+  color: #03A3FB;
+}
+
+.intro-right p {
+  max-width: 560px;
+
+  margin: 0;
+
+  color: #69737d;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+}
+
+
+/* =================================
+   BENEFITS
+================================= */
+
+.career-benefits {
+  padding: 30px 0 100px;
+}
+
+.benefit-card {
+  position: relative;
+
+  min-height: 260px;
+
+  padding: 35px;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 40px rgba(20,30,40,.06);
+
+  transition: .4s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 25px 55px rgba(20,30,40,.11);
+}
+
+.benefit-number {
+  position: absolute;
+
+  top: -25px;
+  right: 15px;
+
+  font-size: 100px;
+
+  font-weight: 900;
+
+  color: rgba(227,154,10,.06);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 30px;
+
+  border-radius: 12px;
+
+  background: #fff4db;
+
+  color: #03A3FB;
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+.benefit-card h3 {
+  margin: 0 0 12px;
+
+  font-size: 21px;
+
+  font-weight: 800;
+}
+
+.benefit-card p {
+  margin: 0;
+
+  color: #737c85;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* =================================
+   JOBS
+================================= */
+
+.jobs-section {
+  padding-bottom: 100px;
+}
+
+.jobs-heading {
+  display: flex;
+
+  align-items: end;
+  justify-content: space-between;
+
+  gap: 30px;
+
+  margin-bottom: 35px;
+}
+
+.jobs-heading h2 {
+  margin: 12px 0 0;
+
+  font-size: 48px;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.jobs-heading h2 strong {
+  color: #03A3FB;
+}
+
+.jobs-heading > p {
+  max-width: 330px;
+
+  margin: 0;
+
+  color: #727b84;
+
+  font-size: 14px;
+
+  line-height: 1.7;
+}
+
+
+/* Job Card */
+
+.job-card {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 25px;
+
+  padding: 25px 30px;
+
+  margin-bottom: 12px;
+
+  background: #ffffff;
+
+  border: 1px solid #e9ecef;
+
+  border-radius: 14px;
+
+  transition: .35s ease;
+}
+
+.job-card:hover {
+  border-color: #e6a00e;
+
+  transform: translateX(7px);
+
+  box-shadow:
+    0 15px 35px rgba(20,30,40,.07);
+}
+
+.job-number {
+  width: 45px;
+
+  color: #e2a01a;
+
+  font-size: 12px;
+
+  font-weight: 800;
+}
+
+.job-main {
+  flex: 1;
+}
+
+.job-main > span {
+  color: #03A3FB;
+
+  font-size: 10px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+}
+
+.job-main h3 {
+  margin: 5px 0 12px;
+
+  font-size: 20px;
+
+  font-weight: 800;
+}
+
+.job-details {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 22px;
+}
+
+.job-details span {
+  color: #7a838c;
+
+  font-size: 12px;
+}
+
+.job-details i {
+  margin-right: 6px;
+
+  color: #03A3FB;
+
+  font-style: normal;
+}
+
+.job-apply {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 13px 20px;
+
+  border: 1px solid #03A3FB;
+
+  border-radius: 7px;
+
+  background: transparent;
+
+  color: #d18b00;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: .3s ease;
+}
+
+.job-apply span {
+  font-size: 18px;
+}
+
+.job-apply:hover {
+  background: #03A3FB;
+
+  color: #ffffff;
+}
+
+
+/* =================================
+   APPLICATION
+================================= */
+
+.career-application {
+  position: relative;
+
+  min-height: 360px;
+
+  margin-bottom: 100px;
+
+  padding: 65px;
+
+  display: flex;
+
+  align-items: center;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  background: #111820;
+}
+
+.application-pattern {
+  position: absolute;
+
+  inset: 0;
+
+  opacity: .12;
+
+  background-image:
+    linear-gradient(
+      45deg,
+      transparent 48%,
+      #ffffff 49%,
+      #ffffff 51%,
+      transparent 52%
+    );
+
+  background-size: 35px 35px;
+}
+
+.application-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+}
+
+.application-content h2 {
+  margin: 12px 0 15px;
+
+  color: #ffffff;
+
+  font-size: 48px;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: -2px;
+}
+
+.application-content h2 strong {
+  color: #EF0404;
+}
+
+.application-content p {
+  max-width: 550px;
+
+  margin-bottom: 25px;
+
+  color: #aab3bb;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+.application-btn {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px 22px;
+
+  border-radius: 7px;
+
+  background: #EF0404;
+
+  color: #111820;
+
+  text-decoration: none;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  transition: .3s ease;
+}
+
+.application-btn:hover {
+  background: #ffffff;
+
+  color: #111820;
+
+  transform: translateY(-3px);
+}
+
+.application-btn span {
+  font-size: 19px;
+}
+
+.application-big-text {
+  position: absolute;
+
+  right: -20px;
+  bottom: -35px;
+
+  color: rgba(255,255,255,.035);
+
+  font-size: 150px;
+
+  font-weight: 900;
+
+  line-height: 1;
+}
+
+
+/* =================================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 991px) {
+
+  .career-hero {
+    min-height: auto;
+
+    padding: 100px 0;
+  }
+
+  .career-visual {
+    display: none;
+  }
+
+  .career-intro {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+  }
+
+  .jobs-heading {
+    align-items: flex-start;
+
+    flex-direction: column;
+  }
+
+}
+
+
+@media (max-width: 767px) {
+
+  .career-hero {
+    padding: 80px 0;
+  }
+
+  .career-hero h1 {
+    font-size: 52px;
+
+    letter-spacing: -2px;
+  }
+
+  .career-hero-content p {
+    font-size: 15px;
+  }
+
+  .career-intro {
+    padding: 70px 0 40px;
+  }
+
+  .intro-left h2 {
+    font-size: 42px;
+  }
+
+  .career-benefits {
+    padding-bottom: 70px;
+  }
+
+  .jobs-heading h2 {
+    font-size: 40px;
+  }
+
+  .job-card {
+    align-items: flex-start;
+
+    flex-wrap: wrap;
+
+    padding: 25px 20px;
+  }
+
+  .job-number {
+    width: auto;
+  }
+
+  .job-main {
+    width: calc(100% - 70px);
+  }
+
+  .job-details {
+    gap: 10px;
+
+    flex-direction: column;
+  }
+
+  .job-apply {
+    width: 100%;
+
+    justify-content: center;
+  }
+
+  .career-application {
+    padding: 40px 25px;
+
+    min-height: 400px;
+  }
+
+  .application-content h2 {
+    font-size: 40px;
+  }
+
+  .application-big-text {
+    font-size: 80px;
+
+    bottom: 10px;
+  }
+}

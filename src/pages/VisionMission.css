@@ -1,0 +1,692 @@
+/* ==========================================
+   BEST INDUSTRIES
+   VISION + MISSION
+========================================== */
+
+.bi-vm-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 10px 0;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(224, 145, 5, 0.10),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(67, 79, 86, 0.12),
+      transparent 30%
+    ),
+    #eef0ef;
+
+  color: #283238;
+}
+
+
+/* Decorative industrial lines */
+
+.bi-vm-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 600px;
+  height: 600px;
+
+  left: -350px;
+  top: 200px;
+
+  border: 1px solid rgba(223, 146, 8, 0.14);
+
+  border-radius: 50%;
+
+  box-shadow:
+    0 0 0 50px rgba(223, 146, 8, 0.025),
+    0 0 0 100px rgba(223, 146, 8, 0.02);
+
+  pointer-events: none;
+}
+
+
+.bi-vm-section::after {
+  content: "";
+
+  position: absolute;
+
+  width: 400px;
+  height: 400px;
+
+  right: -230px;
+  bottom: 80px;
+
+  border: 1px solid rgba(40, 50, 56, 0.08);
+
+  transform: rotate(45deg);
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.bi-vm-wrap {
+  position: relative;
+
+  z-index: 2;
+
+  width: min(1180px, calc(100% - 40px));
+
+  margin: auto;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.bi-vm-heading {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 70px;
+
+  margin-bottom: 60px;
+}
+
+
+.bi-vm-kicker {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 17px;
+
+  color: #03A3FB;
+
+  font-size: 9px;
+
+  font-weight: 900;
+
+  letter-spacing: 2.5px;
+}
+
+
+.bi-vm-kicker::before {
+  content: "";
+
+  width: 28px;
+  height: 2px;
+
+  background: #03A3FB;
+}
+
+
+.bi-vm-heading h2 {
+  margin: 0;
+
+  font-size: clamp(52px, 7vw, 86px);
+
+  line-height: .82;
+
+  letter-spacing: -5px;
+
+  font-weight: 900;
+
+  color: #29343a;
+}
+
+
+.bi-vm-heading h2 em {
+  color: #03A3FB;
+
+  font-style: normal;
+}
+
+
+.bi-vm-heading > p {
+  width: 380px;
+
+  margin: 0 0 5px;
+
+  color: #69757a;
+
+  font-size: 12px;
+
+  line-height: 1.9;
+}
+
+
+/* ==========================================
+   TWO COLUMNS
+========================================== */
+
+.bi-vm-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 22px;
+}
+
+
+/* ==========================================
+   CARDS
+========================================== */
+
+.bi-vm-card {
+  position: relative;
+
+  min-height: 650px;
+
+  padding: 48px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(255,255,255,.08);
+
+  box-shadow:
+    0 25px 60px rgba(35, 45, 50, .13);
+
+  transition:
+    transform .35s ease,
+    box-shadow .35s ease;
+}
+
+
+.bi-vm-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow:
+    0 35px 70px rgba(35, 45, 50, .18);
+}
+
+
+/* Vision */
+
+.bi-vm-vision {
+  background:
+    linear-gradient(
+      145deg,
+      #29353b 0%,
+      #344149 58%,
+      #293238 100%
+    );
+}
+
+
+/* Mission */
+
+.bi-vm-mission {
+  background:
+    linear-gradient(
+      145deg,
+      #03A3FB 0%,
+      #d1522f 48%,
+      #ba4014 100%
+    );
+}
+
+
+/* ==========================================
+   LARGE NUMBER
+========================================== */
+
+.bi-vm-card-number {
+  position: absolute;
+
+  top: 15px;
+  right: 25px;
+
+  font-size: 130px;
+
+  line-height: 1;
+
+  font-weight: 900;
+
+  letter-spacing: -8px;
+
+  color: rgba(255,255,255,.045);
+
+  pointer-events: none;
+}
+
+
+/* ==========================================
+   CARD TOP
+========================================== */
+
+.bi-vm-card-top {
+  position: relative;
+
+  z-index: 2;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  margin-bottom: 65px;
+}
+
+
+.bi-vm-card-top > span {
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 2.5px;
+}
+
+
+.bi-vm-mission .bi-vm-card-top > span {
+  color: #fff;
+}
+
+
+.bi-vm-arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid rgba(255,255,255,.2);
+
+  border-radius: 50%;
+
+  color: #fff;
+
+  font-size: 17px;
+
+  transition: .3s ease;
+}
+
+
+.bi-vm-card:hover .bi-vm-arrow {
+  transform: rotate(45deg);
+
+  background: #fff;
+
+  color: #29343a;
+}
+
+
+/* ==========================================
+   TITLE
+========================================== */
+
+.bi-vm-card h3 {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 470px;
+
+  margin: 0 0 23px;
+
+  color: #fff;
+
+  font-size: 45px;
+
+  line-height: .96;
+
+  letter-spacing: -2.5px;
+
+  font-weight: 900;
+}
+
+
+.bi-vm-card h3 strong {
+  display: block;
+
+  color: #03A3FB;
+
+  font-weight: 900;
+}
+
+
+.bi-vm-mission h3 strong {
+  color: #fff;
+}
+
+
+/* ==========================================
+   DESCRIPTION
+========================================== */
+
+.bi-vm-description {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 475px;
+
+  margin: 0;
+
+  color: rgba(255,255,255,.67);
+
+  font-size: 11px;
+
+  line-height: 1.9;
+}
+
+
+.bi-vm-mission .bi-vm-description {
+  color: rgba(255,255,255,.82);
+}
+
+
+/* ==========================================
+   LINE
+========================================== */
+
+.bi-vm-line {
+  width: 100%;
+  height: 1px;
+
+  margin: 35px 0 0;
+
+  background: rgba(255,255,255,.14);
+}
+
+
+/* ==========================================
+   LIST
+========================================== */
+
+.bi-vm-list {
+  position: relative;
+
+  z-index: 2;
+
+  margin-top: 0;
+}
+
+
+.bi-vm-list > div {
+  display: grid;
+
+  grid-template-columns: 34px 1fr;
+
+  align-items: center;
+
+  min-height: 58px;
+
+  border-bottom: 1px solid rgba(255,255,255,.11);
+
+  transition: .25s ease;
+}
+
+
+.bi-vm-list > div:hover {
+  padding-left: 8px;
+
+  background: rgba(255,255,255,.035);
+}
+
+
+.bi-vm-list span {
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+}
+
+
+.bi-vm-mission .bi-vm-list span {
+  color: #fff;
+}
+
+
+.bi-vm-list p {
+  margin: 0;
+
+  color: rgba(255,255,255,.78);
+
+  font-size: 10px;
+
+  line-height: 1.45;
+
+  font-weight: 600;
+}
+
+
+/* ==========================================
+   BOTTOM TEXT
+========================================== */
+
+.bi-vm-bottom-text {
+  position: absolute;
+
+  left: 48px;
+  right: 48px;
+  bottom: 35px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(255,255,255,.13);
+}
+
+
+.bi-vm-bottom-text span {
+  color: rgba(255,255,255,.45);
+
+  font-size: 7px;
+
+  font-weight: 900;
+
+  letter-spacing: 2px;
+}
+
+
+.bi-vm-bottom-text b {
+  color: #03A3FB;
+
+  font-size: 9px;
+
+  letter-spacing: 1px;
+}
+
+
+.bi-vm-mission .bi-vm-bottom-text b {
+  color: #fff;
+}
+
+
+/* ==========================================
+   FOOTER STATEMENT
+========================================== */
+
+.bi-vm-footer {
+  position: relative;
+
+  margin-top: 70px;
+
+  padding: 55px 30px;
+
+  text-align: center;
+
+  border-top: 1px solid #d4d9da;
+
+  border-bottom: 1px solid #d4d9da;
+}
+
+
+.bi-vm-footer > span {
+  color: #03A3FB;
+
+  font-size: 8px;
+
+  font-weight: 900;
+
+  letter-spacing: 2.5px;
+}
+
+
+.bi-vm-footer h4 {
+  margin: 17px 0 0;
+
+  color: #29343a;
+
+  font-size: clamp(27px, 4vw, 44px);
+
+  line-height: 1;
+
+  letter-spacing: -2px;
+
+  font-weight: 900;
+}
+
+
+.bi-vm-footer h4 strong {
+  color: #03A3FB;
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width: 991px) {
+
+  .bi-vm-heading {
+    display: block;
+  }
+
+
+  .bi-vm-heading > p {
+    width: 100%;
+
+    max-width: 600px;
+
+    margin-top: 25px;
+  }
+
+
+  .bi-vm-grid {
+    grid-template-columns: 1fr;
+  }
+
+
+  .bi-vm-card {
+    min-height: auto;
+
+    padding: 45px;
+    padding-bottom: 105px;
+  }
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width: 600px) {
+
+  .bi-vm-section {
+    padding: 75px 0;
+  }
+
+
+  .bi-vm-wrap {
+    width: calc(100% - 28px);
+  }
+
+
+  .bi-vm-heading {
+    margin-bottom: 40px;
+  }
+
+
+  .bi-vm-heading h2 {
+    font-size: 51px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .bi-vm-heading > p {
+    font-size: 11px;
+  }
+
+
+  .bi-vm-card {
+    padding: 30px 25px 100px;
+  }
+
+
+  .bi-vm-card-number {
+    font-size: 90px;
+
+    top: 10px;
+    right: 15px;
+  }
+
+
+  .bi-vm-card-top {
+    margin-bottom: 45px;
+  }
+
+
+  .bi-vm-card h3 {
+    font-size: 35px;
+
+    letter-spacing: -1.5px;
+  }
+
+
+  .bi-vm-description {
+    font-size: 10.5px;
+  }
+
+
+  .bi-vm-list > div {
+    min-height: 65px;
+  }
+
+
+  .bi-vm-bottom-text {
+    left: 25px;
+    right: 25px;
+    bottom: 25px;
+  }
+
+
+  .bi-vm-footer {
+    margin-top: 50px;
+
+    padding: 40px 10px;
+  }
+
+
+  .bi-vm-footer h4 {
+    font-size: 29px;
+  }
+
+}
