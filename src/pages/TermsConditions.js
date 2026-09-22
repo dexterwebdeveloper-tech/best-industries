@@ -415,9 +415,7 @@ const TermsConditions = () => {
                 <div>
                   <span>ADDRESS</span>
                   <strong>
-                    No 270, Railway Station Road,<br />
-                    Korattur, Chennai - 600 080,<br />
-                    Tamilnadu, India.
+                    No 431, 7th Street (North Phase), SECTOR-1, Ambattur Industrial Estate, Sidco Industrial Estate, Ambattur, Chennai, Tamil Nadu 600098
                   </strong>
                 </div>
 
