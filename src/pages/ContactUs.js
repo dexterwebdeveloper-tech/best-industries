@@ -91,8 +91,8 @@
 //                 <h3>Email Address</h3>
 
                
-//                   <a href="mailto:info@bestindustries.in">
-//                   info@bestindustries.in
+//                   <a href="mailto:bestindustries@yahoo.com">
+//                   bestindustries@yahoo.com
 //                 </a>
 //  <br/>
 //                 <a href="mailto:booking@bestindustries.in">
@@ -255,7 +255,7 @@ const ContactUs = () => {
                   <h3>Phone Number</h3>
 
                   <a href="tel:+917299605040">+91 7299605040</a><br />
-                  <a href="tel:+917358705040">+91 73587 05040</a><br />
+                  {/* <a href="tel:+917358705040">+91 73587 05040</a><br /> */}
                   <a href="tel:+919566088070">+91 95660 88070</a>
                 </div>
 
@@ -277,8 +277,8 @@ const ContactUs = () => {
                   <span>EMAIL US</span>
                   <h3>Email Address</h3>
 
-                  <a href="mailto:info@bestindustries.in">
-                    info@bestindustries.in
+                  <a href="mailto:bestindustries@yahoo.com">
+                    bestindustries@yahoo.com
                   </a>
                   <br />
                   <a href="mailto:booking@bestindustries.in">

@@ -4,7 +4,7 @@ import "./Services.css";
 const services = [
   {
     number: "01",
-    title: "General Fabrication",
+    title: "Kiosk",
     description:
       "Complete metal fabrication solutions including cutting, drilling, bending, fitting and welding for customized industrial requirements.",
     image: "/images/services/1-kiosk.png",
@@ -18,7 +18,7 @@ const services = [
   },
   {
     number: "03",
-    title: "Structural Fabrication",
+    title: "Pallet",
     description:
       "Fabrication of structural steel components using advanced cutting, drilling, bending and welding processes.",
     image: "/images/services/4-INDUSTRIAL RACK.png",
@@ -35,18 +35,18 @@ const services = [
     title: "Automobile Spares",
     description:
       "Manufacturing and supply of automobile spare components for repair, replacement and industrial applications.",
-    image: "/images/services/shim coupling.png",
+    image: "/images/services/shim-coupling.png",
   },
   {
     number: "06",
-    title: "SPM Machines & Spares",
+    title: "Work Bench",
     description:
       "Special Purpose Machines and customized machine components developed according to specific customer requirements.",
     image: "/images/services/workbench.png",
   },
   {
     number: "07",
-    title: "Industrial Spares",
+    title: "Encloser",
     description:
       "Reliable replacement components for industrial machinery, maintenance requirements and machine restoration.",
     image: "/images/services/3-PANEL & PCB ENCLOSURE.png",

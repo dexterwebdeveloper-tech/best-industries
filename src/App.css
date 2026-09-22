@@ -3,7 +3,7 @@ a{
 }
 
 .bgg-darkk{
-    background-color: red;
+    background-color: #0242C4;
 }
 ul{
     list-style: none !important;
@@ -178,11 +178,24 @@ ul{
 }
 
 
+@media (min-width: 992px) {
+  .main-navigation .navbar-collapse {
+    margin-left: 80px;
+  }
+}
+
+
+.logoo {
+    display: block ;
+    height: auto ;
+    margin: 0 auto;
+    width: 110px ;
+}
 
 @media (max-width: 768px) {
     .logoo {
         height: auto;
-        width: 120px;
+        width: 90px;
     }
 }
 

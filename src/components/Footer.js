@@ -99,9 +99,7 @@ const Footer = () => {
               </div> */}
 <p className="text-white">
                 <strong>Factory Address:</strong>{" "}
-                Plot No. 416, Arch Antoniyarnagar,
-                Vellanur Village, Thiruvallur District,
-                Chennai - 600062, Tamil Nadu, India.
+                No 431, 7th Street (North Phase), SECTOR-1, Ambattur Industrial Estate, Sidco Industrial Estate, Ambattur, Chennai, Tamil Nadu 600098
               </p>
 
             </div>
@@ -248,8 +246,8 @@ const Footer = () => {
                         E-mail:
                       </span>
 
-                      <a href="mailto:info@bestindustries.in">
-                        info@bestindustries.in
+                      <a href="mailto:bestindustries@yahoo.com">
+                        bestindustries@yahoo.com
                       </a>
                     </li>
  <span className="text-white">
@@ -261,9 +259,7 @@ const Footer = () => {
                     <li>
                      
 
-                      #270, Railway Station Road,
-                      Korattur, Chennai - 600080.
-                    </li>
+No 431, 7th Street (North Phase), SECTOR-1, Ambattur Industrial Estate, Sidco Industrial Estate, Ambattur, Chennai, Tamil Nadu 600098                    </li>
 
                   </ul>
 

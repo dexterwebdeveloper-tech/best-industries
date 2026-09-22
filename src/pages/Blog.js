@@ -13,7 +13,7 @@ const blogs = [
     title: "Welding & Fabrication",
   },
   {
-    image: "/images/services/industrial-trolley.png",
+    image: "/images/services/INDUSTRIAL-TROLLEY.png",
     date: "Latest",
     title: "Industrial Fabrication",
   },

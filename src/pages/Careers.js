@@ -188,7 +188,7 @@ const Careers = () => {
 
 
         {/* ================= JOBS ================= */}
-        <div className="jobs-section">
+        {/* <div className="jobs-section">
 
           <div className="jobs-heading">
 
@@ -255,7 +255,7 @@ const Careers = () => {
 
           </div>
 
-        </div>
+        </div> */}
 
 
         {/* ================= APPLICATION CTA ================= */}

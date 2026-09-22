@@ -4,7 +4,7 @@ import "./Gallery.css";
 const galleryImages = [
   {
     id: 1,
-    title: "Industrial Fabrication",
+    title: "Kiosk",
     category: "Fabrication",
     image: "/images/services/1-kiosk.png",
   },
@@ -16,13 +16,13 @@ const galleryImages = [
   },
   {
     id: 3,
-    title: "Panel & PCB Enclosure",
+    title: "Encloser",
     category: "Fabrication",
     image: "/images/services/3-PANEL & PCB ENCLOSURE.png",
   },
   {
     id: 4,
-    title: "Industrial Rack",
+    title: "Pallet",
     category: "Industrial",
     image: "/images/services/4-INDUSTRIAL RACK.png",
   },
@@ -106,7 +106,7 @@ const galleryImages = [
   },
   {
     id: 18,
-    title: "Industrial Workbench",
+    title: "Work Bench",
     category: "Industrial",
     image: "/images/services/workbench.png",
   },

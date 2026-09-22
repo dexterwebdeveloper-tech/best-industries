@@ -1,83 +1,165 @@
 import React from "react";
 import "./Facility.css";
 
+// const facilities = [
+//   {
+//     id: "01",
+//     title: "Fabrication Facility",
+//     shortTitle: "FABRICATION",
+//     description:
+//       "A dedicated fabrication environment for manufacturing industrial structures, components and customized engineering solutions.",
+//     details: [
+//       "General Fabrication",
+//       "Structural Fabrication",
+//       "Heavy Fabrication",
+//       "Sheet Metal Work",
+//     ],
+//   },
+//   {
+//     id: "02",
+//     title: "Laser Cutting & Folding",
+//     shortTitle: "LASER & FOLDING",
+//     description:
+//       "Precision cutting and forming capabilities for producing accurate sheet metal components and fabricated parts.",
+//     details: [
+//       "Laser Cutting",
+//       "Sheet Cutting",
+//       "Precision Folding",
+//       "Plate Processing",
+//     ],
+//   },
+//   {
+//     id: "03",
+//     title: "Welding Facility",
+//     shortTitle: "WELDING",
+//     description:
+//       "Professional welding facilities supporting structural, industrial and customized fabrication requirements.",
+//     details: [
+//       "Industrial Welding",
+//       "Structural Welding",
+//       "Welding Booths",
+//       "Welding Tables",
+//     ],
+//   },
+//   {
+//     id: "04",
+//     title: "Machine Shop",
+//     shortTitle: "MACHINE SHOP",
+//     description:
+//       "Machining capabilities supporting industrial spares, fixtures, machine components and special-purpose requirements.",
+//     details: [
+//       "Drilling",
+//       "Machining",
+//       "Jigs & Fixtures",
+//       "Machine Components",
+//     ],
+//   },
+//   {
+//     id: "05",
+//     title: "Material Handling",
+//     shortTitle: "MATERIAL HANDLING",
+//     description:
+//       "Solutions and facilities for developing equipment used to move, transport and handle industrial materials.",
+//     details: [
+//       "Roller Conveyors",
+//       "Chain Conveyors",
+//       "Screw Conveyors",
+//       "Bucket Conveyors",
+//     ],
+//   },
+//   {
+//     id: "06",
+//     title: "Surface Treatment",
+//     shortTitle: "SURFACE TREATMENT",
+//     description:
+//       "Surface preparation and finishing capabilities designed to improve durability, appearance and readiness for further coating.",
+//     details: [
+//       "Shot Blasting",
+//       "Surface Preparation",
+//       "Cleaning",
+//       "Finishing",
+//     ],
+//   },
+// ];
+
+
 const facilities = [
   {
     id: "01",
-    title: "Fabrication Facility",
-    shortTitle: "FABRICATION",
+    title: "Laser Cutting Machine",
+    shortTitle: "LASER CUTTING",
     description:
-      "A dedicated fabrication environment for manufacturing industrial structures, components and customized engineering solutions.",
+      "High-precision laser cutting equipment for producing accurate components, profiles and sheet metal parts.",
     details: [
-      "General Fabrication",
-      "Structural Fabrication",
-      "Heavy Fabrication",
-      "Sheet Metal Work",
+      "LASER CUTTING MACHINE",
+      "Precision Sheet Cutting",
+      "Profile Cutting",
+      "Component Manufacturing",
     ],
   },
   {
     id: "02",
-    title: "Laser Cutting & Folding",
-    shortTitle: "LASER & FOLDING",
+    title: "Tube Laser Cutting Machine",
+    shortTitle: "TUBE LASER",
     description:
-      "Precision cutting and forming capabilities for producing accurate sheet metal components and fabricated parts.",
+      "Advanced tube laser cutting capability for precise processing of pipes, tubes and structural sections.",
     details: [
-      "Laser Cutting",
-      "Sheet Cutting",
-      "Precision Folding",
-      "Plate Processing",
+      "TUBE LASER CUTTING MACHINE",
+      "Tube Processing",
+      "Pipe Cutting",
+      "Profile Cutting",
     ],
   },
   {
     id: "03",
-    title: "Welding Facility",
-    shortTitle: "WELDING",
+    title: "Laser Welding Machine",
+    shortTitle: "LASER WELDING",
     description:
-      "Professional welding facilities supporting structural, industrial and customized fabrication requirements.",
+      "Precision laser welding technology for clean, accurate and reliable welding of industrial components.",
     details: [
-      "Industrial Welding",
-      "Structural Welding",
-      "Welding Booths",
-      "Welding Tables",
+      "LASER WELDING MACHINE",
+      "Precision Welding",
+      "Component Welding",
+      "Fine Weld Applications",
     ],
   },
   {
     id: "04",
-    title: "Machine Shop",
-    shortTitle: "MACHINE SHOP",
+    title: "MIG Welding Machine",
+    shortTitle: "MIG WELDING",
     description:
-      "Machining capabilities supporting industrial spares, fixtures, machine components and special-purpose requirements.",
+      "MIG welding equipment for efficient and consistent welding across industrial fabrication applications.",
     details: [
-      "Drilling",
-      "Machining",
-      "Jigs & Fixtures",
-      "Machine Components",
+      "MIG WELDING MACHINE",
+      "Industrial Welding",
+      "Structural Welding",
+      "Fabrication Welding",
     ],
   },
   {
     id: "05",
-    title: "Material Handling",
-    shortTitle: "MATERIAL HANDLING",
+    title: "Spot Welding Machine",
+    shortTitle: "SPOT WELDING",
     description:
-      "Solutions and facilities for developing equipment used to move, transport and handle industrial materials.",
+      "Spot welding equipment for producing consistent and reliable joints in sheet metal and fabricated components.",
     details: [
-      "Roller Conveyors",
-      "Chain Conveyors",
-      "Screw Conveyors",
-      "Bucket Conveyors",
+      "SPOT WELDING MACHINE",
+      "Sheet Metal Welding",
+      "Resistance Welding",
+      "Component Assembly",
     ],
   },
   {
     id: "06",
-    title: "Surface Treatment",
-    shortTitle: "SURFACE TREATMENT",
+    title: "TIG Welding Machine",
+    shortTitle: "TIG WELDING",
     description:
-      "Surface preparation and finishing capabilities designed to improve durability, appearance and readiness for further coating.",
+      "TIG welding capability for high-quality, precise and controlled welding applications.",
     details: [
-      "Shot Blasting",
-      "Surface Preparation",
-      "Cleaning",
-      "Finishing",
+      "TIG WELDING MACHINE",
+      "Precision Welding",
+      "Stainless Steel Welding",
+      "Controlled Welding",
     ],
   },
 ];

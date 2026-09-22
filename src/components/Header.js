@@ -32,12 +32,12 @@ const Header = () => {
                   </li>
 
                   {/* Phone 2 */}
-                  <li className="px-md-5 fw-bold">
+                  {/* <li className="px-md-5 fw-bold">
                     <a className="text-white" href="tel:+917358705040">
                       <i className="fas fa-phone-volume text-white"></i>
                       &nbsp;+91 7358705040
                     </a>
-                  </li>
+                  </li> */}
 
  <li className="px-md-5 fw-bold">
                     <a className="text-white" href="tel:+919566088070">
@@ -50,11 +50,11 @@ const Header = () => {
                   <li className="px-md-5">
                     <a
                       className="text-white"
-                      href="mailto:info@bestindustries.in"
+                      href="mailto:bestindustries@yahoo.com"
                     >
                       <i className="far fa-envelope text-white"></i>
                       <span className="text-white fw-bold">
-                        &nbsp;info@bestindustries.in
+                        &nbsp;bestindustries@yahoo.com
                       </span>
                     </a>
                   </li>
@@ -117,7 +117,8 @@ const Header = () => {
               <img
                 src="/images/logo.png"
                 alt="Best Industries Logo"
-              />
+                className='logoo '
+              /> 
             </Navbar.Brand>
 
             {/* Mobile Toggle */}
@@ -164,12 +165,12 @@ const Header = () => {
 
 
                 {/* 4. SERVICES */}
-                <Nav.Link
+                {/* <Nav.Link
                   href="/services"
                   className="fw-bold nav-item"
                 >
                   Services
-                </Nav.Link>
+                </Nav.Link> */}
 
 
                 {/* 5. FACILITY */}
@@ -200,12 +201,12 @@ const Header = () => {
 
 
                 {/* 8. QUALITY & SAFETY */}
-                <Nav.Link
+                {/* <Nav.Link
                   href="/quality-safety"
                   className="fw-bold nav-item"
                 >
                   Quality & Safety
-                </Nav.Link>
+                </Nav.Link> */}
 
 
                 {/* 9. CATALOG */}
@@ -225,14 +226,25 @@ const Header = () => {
                   Career
                 </Nav.Link>
 
+ <Nav.Link
+                  href="/Enquiry"
+                  className="fw-bold nav-item"
+                >
+                  Enquiry
+                </Nav.Link>
 
                
+ <Nav.Link
+                  href="/contact-us"
+                  className="fw-bold nav-item"
+                >
+                  Contact
+                </Nav.Link>
 
-
-                             <NavDropdown title="Contact" id="contact-dropdown" className='fw-bold'>
+                             {/* <NavDropdown title="Contact" id="contact-dropdown" className='fw-bold'>
                   <NavDropdown.Item href="/contact-us" className='fw-bold nav-item'>Contact</NavDropdown.Item>
                   <NavDropdown.Item href="/Enquiry" className='fw-bold '>Enquiry</NavDropdown.Item>
-                </NavDropdown>
+                </NavDropdown> */}
 
               </Nav>
 

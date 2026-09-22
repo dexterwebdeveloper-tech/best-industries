@@ -110,7 +110,7 @@ const products = [
   {
     id: 1,
     category: "Fabrication",
-    title: "General Fabrication",
+    title: "Kiosk",
     short: "Precision-built metal structures for industrial applications.",
     description:
       "Custom fabricated metal structures manufactured according to project requirements, dimensions and application needs.",
@@ -130,7 +130,7 @@ const products = [
   {
     id: 3,
     category: "Structural",
-    title: "Structural Fabrication",
+    title: "Encloser",
     short: "Strong and reliable fabricated structures for demanding environments.",
     description:
       "Structural fabrication solutions involving cutting, drilling, bending, welding and assembly of steel components.",
@@ -140,7 +140,7 @@ const products = [
   {
     id: 4,
     category: "Heavy Fabrication",
-    title: "Heavy Fabrication",
+    title: "Pallet",
     short: "Engineered heavy-duty metal fabrication for complex applications.",
     description:
       "Heavy fabrication involving cutting, drilling, punching, bending, rolling, welding and finishing of large components.",
