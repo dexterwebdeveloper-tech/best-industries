@@ -286,9 +286,9 @@ No 431, 7th Street (North Phase), SECTOR-1, Ambattur Industrial Estate, Sidco In
               All Rights Reserved &copy;  <span className="darkcolorrr">Best Industries</span> <span id="date">{new Date().getFullYear()}</span>{' '}
                 <span href="#"> Developed By </span> <a href="https://www.dexterintelligence.com/" className='d-inline' target="_blank" rel="noopener noreferrer">
                 <span className="darkcolorrr">&nbsp;Dexter Intelligence</span>
-              </a> | Hosted By <a href="https://www.urvahosting.com/" className='d-inline ' target="_blank" rel="noopener noreferrer">
-                <span className="darkcolorrr">&nbsp;Urva Hosting</span>
               </a>
+              
+              
               </p>
           
             </div>
