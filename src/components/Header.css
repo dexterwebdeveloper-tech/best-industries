@@ -1,1020 +1,947 @@
-/*=========================================
-        TRUSTLINE TRAVELS HEADER
-==========================================*/
+/* ==========================================================
+   BEST INDUSTRIES HEADER
+   ========================================================== */
 
-:root{
-    --primary:#D71920;
-    --primary-dark:#b81319;
-    --secondary:#222222;
-    --white:#ffffff;
-    --light:#f8f9fa;
-    --border:#ececec;
-    --shadow:0 12px 35px rgba(0,0,0,.08);
-    --transition:.35s ease;
-}
+.bi-header {
+  --bi-header-blue: #0879c9;
+  --bi-header-blue-dark: #075f9e;
+  --bi-header-red: #e2232e;
 
-/*==============================
-General
-===============================*/
+  --bi-header-dark: #101419;
+  --bi-header-dark-soft: #181e25;
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
+  --bi-header-text: #202832;
+  --bi-header-muted: #68737f;
 
-body{
-    overflow-x:hidden;
-    font-family:'Poppins',sans-serif;
-}
+  --bi-header-border: #e7ebef;
+  --bi-header-light: #f6f8fa;
+  --bi-header-white: #ffffff;
 
-a{
-    text-decoration:none;
-}
+  position: relative;
 
-ul{
-    list-style:none;
-    margin:0;
-    padding:0;
-}
+  width: 100%;
+
+  background: #ffffff;
 
-.tt-container{
-    width:100%;
-    max-width:1320px;
-    margin:auto;
-    padding:0 20px;
+  z-index: 999;
 }
 
-/*==============================
-Top Header
-===============================*/
 
-.tt-topbar{
-    background:linear-gradient(90deg,#111,#2b2b2b);
-    color:#fff;
-    border-bottom:3px solid var(--primary);
-}
+/* ==========================================================
+   TOP BAR
+   ========================================================== */
 
-.tt-topbar .tt-container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    min-height:48px;
-}
+.bi-header-top {
+  position: relative;
 
-.tt-left{
-    display:flex;
-    align-items:center;
-    gap:28px;
-    flex-wrap:wrap;
-}
+  width: 100%;
 
-.tt-left a{
-    color:#fff;
-    font-size:14px;
-    font-weight:600;
-    transition:var(--transition);
-}
+  min-height: 42px;
 
-.tt-left a:hover{
-    color:#ffd6d7;
-}
+  display: flex;
+  align-items: center;
 
-.tt-left i{
-    color:var(--primary);
-    margin-right:8px;
-}
+  background: var(--bi-header-dark);
 
-.tt-social{
-    display:flex;
-    align-items:center;
-    gap:10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.tt-social a{
-    width:36px;
-    height:36px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    border-radius:50%;
-    color:#fff;
-    background:rgba(255,255,255,.08);
-    transition:var(--transition);
-}
 
-.tt-social a:hover{
-    background:var(--primary);
-    transform:translateY(-3px);
-}
+.bi-header-top-inner {
+  min-height: 42px;
 
-/*==============================
-Navigation
-===============================*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-/* .tt-navbar{
+  gap: 30px;
+}
 
-    position:sticky;
-    top:0;
-    left:0;
-    width:100%;
-    background:#fff;
-    z-index:999;
-    box-shadow:var(--shadow);
 
-} */
+/* ==========================================================
+   TOP LEFT
+   ========================================================== */
 
-.tt-navbar .tt-container{
+.bi-header-top-left {
+  display: flex;
+  align-items: center;
 
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    min-height:88px;
+  gap: 13px;
 
+  white-space: nowrap;
 }
 
-/*==============================
-Logo
-===============================*/
 
-.tt-logo{
+.bi-header-top-label,
+.bi-header-top-location {
+  display: inline-flex;
+  align-items: center;
 
-    display:flex;
-    align-items:center;
+  gap: 7px;
 
-}
+  color: #f3f4f6;
 
-.tt-logo img{
+  font-size: 11px;
+  line-height: 1;
 
-    width:220px;
-    height:auto;
-    object-fit:contain;
-    transition:var(--transition);
+  font-weight: 500;
 
+  letter-spacing: 0.1px;
 }
 
-.tt-logo img:hover{
 
-    transform:scale(1.05);
+.bi-header-top-label i {
+  color: var(--bi-header-blue);
 
+  font-size: 11px;
 }
 
-/*==============================
-Desktop Menu
-===============================*/
 
-.tt-menu{
+.bi-header-top-location i {
+  color: var(--bi-header-blue);
 
-    display:flex;
-    align-items:center;
-    gap:6px;
-
+  font-size: 11px;
 }
 
-.tt-menu li{
 
-    position:relative;
-
-}
+.bi-header-top-divider {
+  display: block;
 
-.tt-menu li a{
+  flex: 0 0 1px;
 
-    display:block;
-    padding:14px 18px;
-    font-size:16px;
-    font-weight:700;
-    color:#222;
-    border-radius:40px;
-    transition:var(--transition);
+  width: 1px;
+  height: 15px;
 
+  background: rgba(255, 255, 255, 0.13);
 }
 
-.tt-menu li a:hover{
 
-    color:var(--primary);
-    background:#fff3f3;
+/* ==========================================================
+   TOP RIGHT
+   ========================================================== */
 
+.bi-header-top-right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  gap: 13px;
 }
 
-/* Animated underline */
 
-.tt-menu li a::after{
+.bi-header-contact-link {
+  display: inline-flex;
+  align-items: center;
 
-    content:"";
-    position:absolute;
-    left:50%;
-    bottom:4px;
-    width:0;
-    height:3px;
-    background:var(--primary);
-    border-radius:10px;
-    transform:translateX(-50%);
-    transition:var(--transition);
+  gap: 7px;
 
-}
+  color: #fcfcfc;
+
+  font-size: 11px;
+  line-height: 1;
 
-.tt-menu li:hover a::after{
+  font-weight: 500;
 
-    width:70%;
+  text-decoration: none;
 
+  white-space: nowrap;
+
+  transition: color 0.25s ease;
 }
 
-/*==============================
-Right Section
-===============================*/
 
-.tt-right{
+.bi-header-contact-link i {
+  color: var(--bi-header-blue);
 
-    display:flex;
-    align-items:center;
-    gap:18px;
+  font-size: 11px;
 
+  transition: color 0.25s ease;
 }
 
-/*==============================
-Book Button
-===============================*/
 
-.tt-book-btn{
+.bi-header-contact-link:hover {
+  color: #ffffff;
+}
 
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    padding:14px 30px;
-    background:linear-gradient(135deg,var(--primary),var(--primary-dark));
-    color:#fff;
-    border-radius:50px;
-    font-size:15px;
-    font-weight:700;
-    letter-spacing:.5px;
-    transition:var(--transition);
-    box-shadow:0 10px 25px rgba(215,25,32,.25);
 
+.bi-header-contact-link:hover i {
+  color: #ffffff;
 }
 
-.tt-book-btn:hover{
 
-    background:#111;
-    color:#fff;
-    transform:translateY(-3px);
+/* ==========================================================
+   MAIN HEADER
+   ========================================================== */
 
-}
+.bi-header-main {
+  position: relative;
 
-/*==============================
-Mobile Toggle
-===============================*/
+  width: 100%;
 
-.tt-mobile-btn{
+  background: #ffffff;
 
-    width:48px;
-    height:48px;
-    border:none;
-    background:var(--primary);
-    color:#fff;
-    border-radius:12px;
-    cursor:pointer;
-    display:none;
-    transition:var(--transition);
+  border-bottom: 1px solid var(--bi-header-border);
 
+  box-shadow:
+    0 4px 18px rgba(16, 20, 25, 0.04);
 }
+
 
-.tt-mobile-btn i{
+.bi-header-navbar {
+  min-height: 90px;
 
-    font-size:20px;
+  padding: 0 !important;
 
+  background: #ffffff !important;
 }
 
-.tt-mobile-btn:hover{
 
-    background:#111;
+.bi-header-navbar > .container {
+  min-height: 90px;
 
+  display: flex;
+  align-items: center;
 }
 
-/*=========================================
-        PART 2B
- Dropdown + Hover + Sticky + Effects
-==========================================*/
 
-/*==========================
-Dropdown
-===========================*/
+/* ==========================================================
+   LOGO
+   ========================================================== */
 
-.tt-menu li{
-    position:relative;
-}
+.bi-header-brand {
+  display: flex !important;
+  align-items: center !important;
 
-.tt-menu li ul{
+  margin: 0 !important;
+  padding: 0 !important;
 
-    position:absolute;
-    top:120%;
-    left:0;
-
-    width:270px;
+  text-decoration: none !important;
+}
 
-    background:#fff;
 
-    border-radius:15px;
+.bi-header-logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
-    box-shadow:0 15px 40px rgba(0,0,0,.12);
+  width: 145px;
+  height: 74px;
+}
 
-    opacity:0;
-    visibility:hidden;
 
-    transition:.35s;
+.bi-header-logo {
+  display: block;
 
-    padding:12px 0;
+  width: auto;
+  height: auto;
 
-    z-index:999;
+  max-width: 100%;
+  max-height: 67px;
 
+  object-fit: contain;
 }
 
-.tt-menu li:hover > ul{
 
-    opacity:1;
-    visibility:visible;
+/* ==========================================================
+   NAVIGATION COLLAPSE
+   ========================================================== */
 
-    top:100%;
-
+.bi-header-collapse {
+  flex-grow: 1;
 }
 
-.tt-menu li ul li{
 
-    width:100%;
+.bi-header-nav {
+  display: flex;
+  align-items: center;
 
+  gap: 2px;
 }
 
-.tt-menu li ul li a{
 
-    display:block;
+/* ==========================================================
+   NORMAL NAV LINKS
+   ========================================================== */
 
-    padding:14px 22px;
+.bi-header-nav .bi-header-nav-link {
+  position: relative;
 
-    color:#222;
+  display: flex;
+  align-items: center;
 
-    font-size:15px;
+  min-height: 90px;
 
-    font-weight:600;
+  padding: 0 13px !important;
 
-    transition:.3s;
+  color: #003C92 !important;
 
-    border-radius:0;
+  /* font-size: 13px !important; */
+  line-height: 1 !important;
 
-}
+  font-weight: 600 !important;
 
-.tt-menu li ul li a::after{
+  text-decoration: none !important;
 
-    display:none;
+  white-space: nowrap;
 
+  transition:
+    color 0.25s ease,
+    background 0.25s ease;
 }
 
-.tt-menu li ul li a:hover{
 
-    background:#D71920;
+/* Small bottom line */
 
-    color:#fff;
+.bi-header-nav .bi-header-nav-link::after {
+  content: "";
 
-    padding-left:30px;
+  position: absolute;
 
-}
+  left: 50%;
+  bottom: 0;
 
-/*==========================
-Second Level Dropdown
-===========================*/
+  width: 0;
+  height: 3px;
 
-.tt-menu li ul li{
+  background: var(--bi-header-blue);
 
-    position:relative;
+  transform: translateX(-50%);
 
+  border-radius: 3px 3px 0 0;
+
+  transition: width 0.25s ease;
 }
 
-.tt-menu li ul li ul{
 
-    left:105%;
+.bi-header-nav .bi-header-nav-link:hover {
+  color: var(--bi-header-blue) !important;
+}
 
-    top:0;
 
+.bi-header-nav .bi-header-nav-link:hover::after {
+  width: 24px;
 }
 
-.tt-menu li ul li:hover > ul{
 
-    top:0;
+/* ==========================================================
+   ABOUT DROPDOWN
+   ========================================================== */
 
+.bi-header-dropdown {
+  position: relative;
 }
 
-/*==========================
-Active Menu
-===========================*/
 
-.tt-menu li.active>a{
+.bi-header-dropdown > .dropdown-toggle {
+  position: relative;
 
-    color:#D71920;
+  min-height: 90px;
 
-}
+  display: flex !important;
+  align-items: center !important;
 
-.tt-menu li.active>a::after{
+  gap: 5px;
 
-    width:70%;
+  padding: 0 13px !important;
 
-}
+  font-weight: bold !important;
+  color: #003C92 !important;
 
-/*==========================
-Navigation Hover
-===========================*/
+  /* font-size: 13px !important; */
+  line-height: 1 !important;
 
-.tt-menu li{
+  font-weight: 600 !important;
 
-    overflow:hidden;
+  text-decoration: none !important;
 
+  transition: color 0.25s ease;
 }
 
-.tt-menu li a{
 
-    position:relative;
-
+.bi-header-dropdown > .dropdown-toggle:hover {
+  color: var(--bi-header-blue) !important;
 }
-
-.tt-menu li a::before{
 
-    content:"";
 
-    position:absolute;
+/* Bootstrap arrow */
 
-    top:0;
-    left:-100%;
+.bi-header-dropdown > .dropdown-toggle::after {
+  margin-left: 5px !important;
 
-    width:100%;
-    height:100%;
+  vertical-align: middle !important;
 
-    background:linear-gradient(
-        90deg,
-        transparent,
-        rgba(215,25,32,.08),
-        transparent
-    );
+  border-top-width: 4px !important;
+  border-right-width: 4px !important;
+  border-left-width: 4px !important;
 
-    transition:.55s;
-
+  transition: transform 0.25s ease;
 }
 
-.tt-menu li:hover a::before{
 
-    left:100%;
-
+.bi-header-dropdown.show > .dropdown-toggle::after {
+  transform: rotate(180deg);
 }
 
-/*==========================
-Book Button Animation
-===========================*/
 
-.tt-book-btn{
+/* Dropdown box */
 
-    position:relative;
+.bi-header-dropdown .dropdown-menu {
+  min-width: 225px !important;
 
-    overflow:hidden;
+  margin-top: 0 !important;
 
-}
+  padding: 9px !important;
 
-.tt-book-btn::before{
+  background: #ffffff !important;
 
-    content:"";
+  border: 1px solid #e8edf2 !important;
+  border-radius: 10px !important;
 
-    position:absolute;
+  box-shadow:
+    0 18px 45px rgba(16, 20, 25, 0.12) !important;
+}
 
-    top:0;
-    left:-100%;
 
-    width:100%;
-    height:100%;
+.bi-header-dropdown .dropdown-item {
+  position: relative;
 
-    background:rgba(255,255,255,.18);
+  padding: 11px 14px !important;
 
-    transform:skewX(-25deg);
+  color: #37414c !important;
 
-    transition:.5s;
+  background: transparent !important;
 
-}
+  border-radius: 6px !important;
 
-.tt-book-btn:hover::before{
+  font-size: 12px !important;
 
-    left:120%;
+  font-weight: 500 !important;
 
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    padding 0.2s ease;
 }
 
-/*==========================
-Sticky Navbar
-===========================*/
 
-.tt-navbar{
+.bi-header-dropdown .dropdown-item:hover {
+  padding-left: 18px !important;
 
-    transition:.35s;
+  color: var(--bi-header-blue) !important;
 
+  background: #f5f8fb !important;
 }
-
-.tt-navbar.sticky{
-
-    min-height:75px;
 
-    box-shadow:0 12px 30px rgba(0,0,0,.12);
 
-    animation:slideDown .4s ease;
+/* Tiny blue marker */
 
-}
+.bi-header-dropdown .dropdown-item::before {
+  content: "";
 
-.tt-navbar.sticky .tt-logo img{
+  position: absolute;
 
-    width:190px;
-
-}
+  left: 7px;
+  top: 50%;
 
-/*==========================
-Sticky Animation
-===========================*/
+  width: 3px;
+  height: 0;
 
-@keyframes slideDown{
+  background: var(--bi-header-blue);
 
-0%{
+  border-radius: 20px;
 
-transform:translateY(-100%);
+  transform: translateY(-50%);
 
+  transition: height 0.2s ease;
 }
 
-100%{
 
-transform:translateY(0);
-
-}
-
+.bi-header-dropdown .dropdown-item:hover::before {
+  height: 15px;
 }
 
-/*==========================
-Logo Hover
-===========================*/
 
-.tt-logo{
+/* ==========================================================
+   CONTACT CTA
+   ========================================================== */
 
-    overflow:hidden;
+.bi-header-nav .bi-header-contact-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 
-}
+  gap: 9px;
 
-.tt-logo img{
+  min-height: auto !important;
 
-    transition:.4s;
+  margin-left: 10px;
+  padding: 13px 17px !important;
 
-}
+  color: #ffffff !important;
 
-.tt-logo:hover img{
+  /* background: var(--bi-header-dark) !important; */
+  background: var(--bi-header-blue) !important;
+  border-color: var(--bi-header-blue) !important;
 
-    transform:scale(1.06);
+  /* border: 1px solid var(--bi-header-dark) !important; */
+  border-radius: 7px !important;
 
-}
+  font-size: 12px !important;
 
-/*==========================
-Topbar Hover
-===========================*/
+  font-weight: 600 !important;
 
-.tt-left a{
+  text-decoration: none !important;
 
-    position:relative;
+  white-space: nowrap;
 
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
 }
-
-.tt-left a::after{
 
-    content:"";
 
-    position:absolute;
+.bi-header-nav .bi-header-contact-btn i {
+  color: white;
 
-    left:0;
+  font-size: 10px;
 
-    bottom:-4px;
-
-    width:0;
-
-    height:2px;
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
 
-    background:#D71920;
 
-    transition:.3s;
+.bi-header-nav .bi-header-contact-btn:hover {
+  color: #ffffff !important;
 
-}
+  background:  #CE161A !important;
 
-.tt-left a:hover::after{
+  border-color: #CE161A !important;
 
-    width:100%;
+  transform: translateY(-2px);
 
+  box-shadow:
+    0 8px 20px rgba(8, 121, 201, 0.17);
 }
 
-/*==========================
-Social Icons
-===========================*/
 
-.tt-social a{
+.bi-header-nav .bi-header-contact-btn:hover i {
+  color: #ffffff;
 
-    position:relative;
-
+  transform: translateX(3px);
 }
 
-.tt-social a::before{
 
-    content:"";
+/* ==========================================================
+   MOBILE TOGGLE
+   ========================================================== */
 
-    position:absolute;
+.bi-header-toggle {
+  position: relative;
 
-    inset:0;
+  width: 44px;
+  height: 42px;
 
-    border-radius:50%;
+  padding: 9px !important;
 
-    border:2px solid transparent;
+  background: #f5f7f9 !important;
 
-    transition:.35s;
+  border: 1px solid #e5e9ed !important;
+  border-radius: 7px !important;
 
+  box-shadow: none !important;
 }
-
-.tt-social a:hover::before{
 
-    border-color:#fff;
 
+.bi-header-toggle:focus {
+  box-shadow: none !important;
 }
 
-.tt-social a:hover{
 
-    transform:translateY(-4px) rotate(360deg);
+.bi-header-toggle span {
+  display: block;
 
-}
+  width: 22px;
+  height: 2px;
 
-/*==========================
-Menu Spacing
-===========================*/
+  margin: 4px auto;
 
-.tt-menu{
+  background: var(--bi-header-dark);
 
-    flex-wrap:nowrap;
+  border-radius: 20px;
 
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
 }
 
-.tt-menu>li{
 
-    margin:0 3px;
+/* animated X */
 
+.bi-header-toggle-active span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
 }
 
-/*==========================
-Desktop Button Spacing
-===========================*/
 
-.tt-right{
+.bi-header-toggle-active span:nth-child(2) {
+  opacity: 0;
+}
 
-    margin-left:25px;
 
+.bi-header-toggle-active span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
 }
 
-/*==========================
-Smooth Transition
-===========================*/
 
-.tt-header *{
+/* ==========================================================
+   LARGE DESKTOP
+   ========================================================== */
 
-    transition:.3s;
+@media (min-width: 1200px) {
 
+  .bi-header-dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+
 }
 
-/*=========================================
-        PART 2C
-    Mobile Responsive Header
-==========================================*/
 
-/* Hide Mobile Elements */
+/* ==========================================================
+   LAPTOP
+   ========================================================== */
 
-/* .tt-mobile{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:320px;
-    height:100vh;
-    background:#fff;
-    z-index:99999;
-    overflow-y:auto;
-    transition:.45s ease;
-    box-shadow:-10px 0 35px rgba(0,0,0,.15);
-} */
+@media (max-width: 1199px) and (min-width: 992px) {
 
-.tt-mobile.open{
-    right:0;
-}
+  .bi-header-logo-box {
+    width: 120px;
+  }
 
-/* Mobile Header */
 
-.tt-mobile-head{
+  .bi-header-nav .bi-header-nav-link,
+  .bi-header-dropdown > .dropdown-toggle {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px;
-    background:#D71920;
+    font-size: 12px !important;
+  }
 
-}
 
-.tt-mobile-head img{
+  .bi-header-nav .bi-header-contact-btn {
+    margin-left: 5px;
 
-    width:150px;
-    background:#fff;
-    border-radius:8px;
-    padding:5px;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
 
-}
+
+  .bi-header-top-location {
+    display: none;
+  }
 
-.tt-mobile-head button{
 
-    width:40px;
-    height:40px;
-    border:none;
-    background:#fff;
-    color:#D71920;
-    border-radius:50%;
-    font-size:24px;
-    cursor:pointer;
+  .bi-header-top-left .bi-header-top-divider {
+    display: none;
+  }
 
 }
 
-/* Mobile Menu */
 
-.tt-mobile ul{
+/* ==========================================================
+   TABLET + MOBILE
+   ========================================================== */
 
-    padding:20px;
+@media (max-width: 991px) {
 
-}
+  /* --------------------------
+     TOP BAR
+  -------------------------- */
 
-.tt-mobile ul li{
+  .bi-header-top {
+    min-height: auto;
+  }
 
-    border-bottom:1px solid #eee;
 
-}
+  .bi-header-top-inner {
+    min-height: auto;
 
-.tt-mobile ul li:last-child{
+    padding: 9px 0;
 
-    border:none;
+    justify-content: center;
+  }
 
-}
 
-.tt-mobile ul li a{
+  .bi-header-top-left {
+    display: none;
+  }
 
-    display:block;
-    padding:15px 0;
-    color:#222;
-    font-size:16px;
-    font-weight:600;
-    transition:.3s;
 
-}
+  .bi-header-top-right {
+    width: 100%;
 
-.tt-mobile ul li a:hover{
+    justify-content: center;
 
-    color:#D71920;
-    padding-left:10px;
+    flex-wrap: wrap;
 
-}
+    gap: 8px 14px;
+  }
 
-/* Mobile Book Button */
 
-.tt-mobile .tt-book-btn{
+  /* --------------------------
+     NAVBAR
+  -------------------------- */
 
-    display:block;
-    margin:25px 20px;
-    text-align:center;
+  .bi-header-navbar,
+  .bi-header-navbar > .container {
+    min-height: 78px;
+  }
 
-}
 
-/*==========================
-Tablet
-==========================*/
+  .bi-header-logo-box {
+    width: 120px;
+    height: 65px;
+  }
 
-@media(max-width:1199px){
 
-.tt-logo img{
+  .bi-header-logo {
+    max-height: 58px;
+  }
 
-    width:190px;
 
-}
+  /* Mobile menu box */
 
-.tt-menu li a{
+  .bi-header-collapse {
+    position: absolute;
 
-    padding:12px 12px;
-    font-size:15px;
+    left: 0;
+    top: 100%;
 
-}
+    width: 100%;
 
-.tt-book-btn{
+    background: #ffffff;
 
-    padding:12px 22px;
+    border-top: 1px solid #edf0f3;
+    border-bottom: 1px solid #e5e9ed;
 
-}
+    box-shadow:
+      0 15px 35px rgba(16, 20, 25, 0.12);
 
-}
+    z-index: 9999;
+  }
 
-/*==========================
-Laptop
-==========================*/
 
-@media(max-width:991px){
+  .bi-header-nav {
+    width: 100%;
 
-.tt-topbar{
+    display: block;
 
-    display:block;
-    display: flex;
+    max-height: calc(100vh - 120px);
 
-}
+    padding: 12px 20px 20px;
 
-.tt-navbar .tt-container{
+    overflow-y: auto;
+  }
 
-    min-height:75px;
+  
 
-}
+  /* normal links */
 
-.tt-logo img{
+  .bi-header-nav .bi-header-nav-link {
+    min-height: auto;
 
-    width:170px;
+    width: 100%;
 
-}
+    padding: 13px 12px !important;
 
-.tt-menu{
+    border-bottom: 1px solid #f0f2f4;
 
-    display:none;
+        color: var(--bi-header-blue) !important;
 
-}
+    /* font-size: 13px !important; */
+  }
 
-.tt-book-btn{
 
-    display:none;
+  .bi-header-nav .bi-header-nav-link::after {
+    display: none;
+  }
 
-}
 
-.tt-mobile-btn{
+  .bi-header-nav .bi-header-nav-link:hover {
+    padding-left: 17px !important;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    color: var(--bi-header-blue) !important;
 
-}
+    background: #f7f9fb;
+  }
 
-}
 
-/*==========================
-Mobile
-==========================*/
+  /* dropdown */
 
-@media(max-width:767px){
+  .bi-header-dropdown {
+    width: 100%;
+  }
 
-.tt-navbar{
 
-    padding:5px 0;
+  .bi-header-dropdown > .dropdown-toggle {
+    min-height: auto;
 
-}
+    width: 100%;
 
-.tt-navbar .tt-container{
+    justify-content: space-between;
 
-    min-height:65px;
+    padding: 13px 12px !important;
 
-}
+    border-bottom: 1px solid #f0f2f4;
 
-.tt-logo img{
+    font-size: 13px !important;
+  }
 
-    width:145px;
 
-}
+  .bi-header-dropdown .dropdown-menu {
+    position: static !important;
 
-.tt-mobile{
+    width: 100% !important;
 
-    width:290px;
+    min-width: 100% !important;
 
-}
+    margin: 0 !important;
 
-.tt-mobile ul li a{
+    padding: 5px 0 8px 13px !important;
 
-    font-size:15px;
+    background: #f8fafb !important;
 
-}
+    border: 0 !important;
+    border-radius: 0 !important;
 
-}
+    box-shadow: none !important;
 
-/*==========================
-Small Mobile
-==========================*/
+    transform: none !important;
+  }
 
-@media(max-width:480px){
 
-.tt-container{
+  .bi-header-dropdown .dropdown-item {
+    padding: 11px 15px !important;
 
-    padding:0 15px;
+    border-left: 2px solid #e3e8ed;
 
-}
+    border-radius: 0 !important;
+  }
 
-.tt-logo img{
 
-    width:125px;
+  .bi-header-dropdown .dropdown-item:hover {
+    padding-left: 20px !important;
 
-}
+    border-left-color: var(--bi-header-blue);
+  }
 
-.tt-mobile{
 
-    width:100%;
+  /* CTA */
 
-}
+  .bi-header-nav .bi-header-contact-btn {
+    width: 100%;
 
-.tt-mobile-head{
+    margin: 14px 0 0;
 
-    padding:18px;
+    padding: 14px 17px !important;
 
-}
+    border-radius: 6px !important;
+  }
 
-.tt-mobile-head img{
+}
 
-    width:130px;
 
-}
+/* ==========================================================
+   MOBILE
+   ========================================================== */
 
-.tt-mobile-head button{
+@media (max-width: 767px) {
 
-    width:36px;
-    height:36px;
-    font-size:22px;
+  .bi-header-top-right {
+    gap: 7px 12px;
+  }
 
-}
 
-.tt-mobile ul{
+  .bi-header-email {
+    width: 100%;
 
-    padding:15px;
+    justify-content: center;
 
-}
+    padding-top: 2px;
+  }
 
-.tt-mobile ul li a{
 
-    padding:14px 0;
+  .bi-header-top-right .bi-header-top-divider:nth-of-type(2) {
+    display: none;
+  }
 
-}
 
-}
+  .bi-header-navbar,
+  .bi-header-navbar > .container {
+    min-height: 72px;
+  }
 
-/*==========================
-Overlay
-==========================*/
 
-.tt-overlay{
+  .bi-header-logo-box {
+    width: 105px;
+    height: 60px;
+  }
 
-    position:fixed;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
-    background:rgba(0,0,0,.55);
-    opacity:0;
-    visibility:hidden;
-    transition:.35s;
-    z-index:9990;
 
-}
+  .bi-header-logo {
+    max-height: 53px;
+  }
 
-.tt-overlay.active{
 
-    opacity:1;
-    visibility:visible;
+  .bi-header-nav {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
 }
 
-/*==========================
-Scrollbar
-==========================*/
 
-.tt-mobile::-webkit-scrollbar{
+/* ==========================================================
+   SMALL MOBILE
+   ========================================================== */
 
-    width:6px;
+@media (max-width: 480px) {
 
-}
+  .bi-header-contact-link {
+    font-size: 10px;
+  }
 
-.tt-mobile::-webkit-scrollbar-thumb{
 
-    background:#D71920;
-    border-radius:20px;
+  .bi-header-top-right .bi-header-top-divider {
+    height: 12px;
+  }
 
-}
 
-.tt-mobile::-webkit-scrollbar-track{
+  .bi-header-email {
+    font-size: 10px;
+  }
 
-    background:#f2f2f2;
 
-}
+  .bi-header-navbar,
+  .bi-header-navbar > .container {
+    min-height: 68px;
+  }
 
-/*==========================
-Hamburger Animation
-==========================*/
 
-.tt-mobile-btn{
+  .bi-header-logo-box {
+    width: 95px;
+    height: 56px;
+  }
 
-    transition:.3s;
 
-}
+  .bi-header-logo {
+    max-height: 49px;
+  }
 
-.tt-mobile-btn:hover{
 
-    transform:rotate(90deg);
+  .bi-header-toggle {
+    width: 41px;
+    height: 39px;
+  }
 
 }

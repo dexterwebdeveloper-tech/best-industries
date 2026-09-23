@@ -225,7 +225,622 @@ ul{
 
 
 
+/* ==========================================================
+   BEST INDUSTRIES - CLIENT LOGO SHOWCASE
+   ========================================================== */
 
+.bi-client-showcase {
+  --bi-client-blue: #0879c9;
+  --bi-client-red: #ed1c24;
+  --bi-client-dark: #161b21;
+  --bi-client-text: #202831;
+  --bi-client-muted: #737d87;
+  --bi-client-border: #e7ebef;
+
+  position: relative;
+
+  width: 100%;
+
+  margin-top: 55px;
+  padding: 30px 32px 24px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 18px;
+
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.18);
+
+  overflow: hidden;
+}
+
+
+/* Small logo-color accent */
+
+.bi-client-showcase::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: linear-gradient(
+    90deg,
+    var(--bi-client-blue) 0%,
+    var(--bi-client-blue) 88%,
+    var(--bi-client-red) 88%,
+    var(--bi-client-red) 100%
+  );
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+.bi-client-showcase-header {
+  display: flex;
+  align-items: flex-end;
+
+  gap: 30px;
+
+  margin-bottom: 24px;
+}
+
+
+.bi-client-showcase-heading {
+  flex: 0 0 auto;
+
+  max-width: 500px;
+}
+
+
+.bi-client-eyebrow {
+  position: relative;
+
+  display: inline-flex;
+  align-items: center;
+
+  gap: 7px;
+
+  margin-bottom: 8px;
+
+  color: var(--bi-client-blue);
+
+  font-size: 10px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+}
+
+
+.bi-client-eyebrow::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  background: var(--bi-client-red);
+
+  border-radius: 50%;
+}
+
+
+.bi-client-showcase-heading h3 {
+  margin: 0;
+
+  color: var(--bi-client-dark);
+
+  font-size: clamp(20px, 2vw, 27px);
+  line-height: 1.25;
+
+  font-weight: 700;
+
+  letter-spacing: -0.4px;
+}
+
+
+.bi-client-showcase-line {
+  flex: 1;
+
+  padding-bottom: 8px;
+}
+
+
+.bi-client-showcase-line span {
+  display: block;
+
+  width: 100%;
+  height: 1px;
+
+  background: #e7ebef;
+}
+
+
+/* ==========================================================
+   SLIDER WRAPPER
+   ========================================================== */
+
+.bi-client-slider-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  padding: 4px 0;
+}
+
+
+.bi-client-swiper {
+  width: 100%;
+
+  padding: 5px 2px 12px !important;
+}
+
+
+.bi-client-swiper .swiper-wrapper {
+  align-items: stretch;
+}
+
+
+.bi-client-swiper .swiper-slide {
+  height: auto !important;
+}
+
+
+/* ==========================================================
+   LOGO CARD
+   ========================================================== */
+
+.bi-client-logo-card {
+  position: relative;
+
+  height: 128px;
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid var(--bi-client-border);
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  cursor: grab;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+
+.bi-client-logo-card:active {
+  cursor: grabbing;
+}
+
+
+.bi-client-logo-card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(8, 121, 201, 0.28);
+
+  box-shadow:
+    0 10px 24px rgba(20, 32, 45, 0.09);
+}
+
+
+/* ==========================================================
+   LOGO IMAGE AREA
+   ========================================================== */
+
+.bi-client-logo-inner {
+  position: relative;
+
+  flex: 1;
+
+  min-height: 92px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 16px 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff 0%,
+      #fafbfc 100%
+    );
+}
+
+
+.bi-client-logo-inner img {
+  display: block;
+
+  width: auto !important;
+  height: auto !important;
+
+  max-width: 100% !important;
+  max-height: 58px !important;
+
+  object-fit: contain !important;
+  object-position: center !important;
+
+  filter: none !important;
+
+  opacity: 1 !important;
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.bi-client-logo-card:hover
+.bi-client-logo-inner img {
+  transform: scale(1.04);
+}
+
+
+/* ==========================================================
+   CLIENT NAME
+   ========================================================== */
+
+.bi-client-logo-name {
+  display: block;
+
+  width: 100%;
+
+  padding: 7px 10px;
+
+  background: #f7f8fa;
+
+  border-top: 1px solid #edf0f2;
+
+  color: #78818b;
+
+  font-size: 9px;
+  line-height: 1.2;
+
+  font-weight: 700;
+
+  letter-spacing: 0.6px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  white-space: nowrap;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.bi-client-logo-card:hover
+.bi-client-logo-name {
+  color: var(--bi-client-blue);
+
+  background: #f4f8fb;
+}
+
+
+/* ==========================================================
+   SMALL HOVER ACCENT
+   ========================================================== */
+
+.bi-client-logo-card::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: var(--bi-client-blue);
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+
+.bi-client-logo-card:hover::after {
+  width: 55%;
+}
+
+
+/* ==========================================================
+   BOTTOM AREA
+   ========================================================== */
+
+.bi-client-showcase-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 25px;
+
+  margin-top: 10px;
+  padding-top: 17px;
+
+  border-top: 1px solid #edf0f2;
+}
+
+
+.bi-client-trust-text {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+}
+
+
+.bi-client-trust-dot {
+  position: relative;
+
+  flex: 0 0 7px;
+
+  width: 7px;
+  height: 7px;
+
+  background: var(--bi-client-blue);
+
+  border-radius: 50%;
+}
+
+
+.bi-client-trust-dot::after {
+  content: "";
+
+  position: absolute;
+
+  inset: -4px;
+
+  border: 1px solid rgba(8, 121, 201, 0.2);
+
+  border-radius: 50%;
+}
+
+
+.bi-client-trust-text p {
+  margin: 0;
+
+  color: var(--bi-client-muted);
+
+  font-size: 11px;
+  line-height: 1.5;
+
+  font-weight: 500;
+}
+
+
+/* ==========================================================
+   WORK WITH US LINK
+   ========================================================== */
+
+.bi-client-contact-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 8px;
+
+  flex-shrink: 0;
+
+  color: var(--bi-client-dark);
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.25s ease;
+}
+
+
+.bi-client-contact-link i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 27px;
+  height: 27px;
+
+  background: var(--bi-client-dark);
+
+  border-radius: 50%;
+
+  color: #ffffff;
+
+  font-size: 9px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.bi-client-contact-link:hover {
+  color: var(--bi-client-blue);
+}
+
+
+.bi-client-contact-link:hover i {
+  background: var(--bi-client-blue);
+
+  transform: translateX(3px);
+}
+
+
+/* ==========================================================
+   TABLET
+   ========================================================== */
+
+@media (max-width: 991px) {
+
+  .bi-client-showcase {
+    margin-top: 45px;
+
+    padding: 27px 25px 22px;
+  }
+
+
+  .bi-client-showcase-header {
+    align-items: center;
+
+    margin-bottom: 21px;
+  }
+
+
+  .bi-client-logo-card {
+    height: 120px;
+  }
+
+
+  .bi-client-logo-inner {
+    min-height: 86px;
+  }
+
+
+  .bi-client-logo-inner img {
+    max-height: 52px !important;
+  }
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 767px) {
+
+  .bi-client-showcase {
+    margin-top: 38px;
+
+    padding: 24px 16px 19px;
+
+    border-radius: 14px;
+  }
+
+
+  .bi-client-showcase-header {
+    display: block;
+
+    margin-bottom: 20px;
+  }
+
+
+  .bi-client-showcase-line {
+    display: none;
+  }
+
+
+  .bi-client-showcase-heading {
+    max-width: 100%;
+  }
+
+
+  .bi-client-showcase-heading h3 {
+    font-size: 21px;
+  }
+
+
+  .bi-client-logo-card {
+    height: 112px;
+
+    border-radius: 9px;
+  }
+
+
+  .bi-client-logo-inner {
+    min-height: 82px;
+
+    padding: 13px;
+  }
+
+
+  .bi-client-logo-inner img {
+    max-height: 48px !important;
+  }
+
+
+  .bi-client-logo-name {
+    padding: 6px 7px;
+
+    font-size: 8px;
+  }
+
+
+  .bi-client-showcase-bottom {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 13px;
+  }
+
+}
+
+
+/* ==========================================================
+   SMALL MOBILE
+   ========================================================== */
+
+@media (max-width: 480px) {
+
+  .bi-client-showcase {
+    margin-left: 0;
+    margin-right: 0;
+
+    padding-left: 13px;
+    padding-right: 13px;
+  }
+
+
+  .bi-client-eyebrow {
+    font-size: 9px;
+  }
+
+
+  .bi-client-showcase-heading h3 {
+    font-size: 19px;
+  }
+
+
+  .bi-client-logo-card {
+    height: 105px;
+  }
+
+
+  .bi-client-logo-inner {
+    min-height: 76px;
+
+    padding: 11px;
+  }
+
+
+  .bi-client-logo-inner img {
+    max-height: 43px !important;
+  }
+
+}
 
 
 

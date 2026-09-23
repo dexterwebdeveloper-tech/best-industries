@@ -124,7 +124,7 @@
 
   line-height: .82;
 
-  letter-spacing: -6px;
+  /* letter-spacing: -6px; */
 
   font-weight: 900;
 }
@@ -256,9 +256,9 @@
 
   border-bottom: 1px solid #d5dada;
 
-  color: #68747a;
+  color: #000000;
 
-  font-size: 8px;
+  font-size: 13px;
 
   font-weight: 800;
 
@@ -335,9 +335,9 @@
 .bi-privacy-article > p {
   margin: 0 0 17px;
 
-  color: #68747a;
+  color: #000000;
 
-  font-size: 12px;
+  /* font-size: 12px; */
 
   line-height: 2;
 }
@@ -396,7 +396,7 @@
 
   color: rgba(255,255,255,.52);
 
-  font-size: 9px;
+  /* font-size: 9px; */
 }
 
 
@@ -669,7 +669,7 @@
 
   color: #738086;
 
-  font-size: 9px;
+  /* font-size: 9px; */
 
   line-height: 1.7;
 }
@@ -779,7 +779,7 @@
 
   color: #68747a;
 
-  font-size: 10px;
+  font-size: 13px;
 
   line-height: 1.8;
 }
@@ -960,7 +960,7 @@
 
   color: #68747a;
 
-  font-size: 9px;
+  /* font-size: 9px; */
 
   line-height: 1.7;
 }
@@ -1017,7 +1017,7 @@
 
   color: rgba(255,255,255,.5);
 
-  font-size: 10px;
+  /* font-size: 10px; */
 
   line-height: 1.8;
 }

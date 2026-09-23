@@ -289,7 +289,7 @@ const Catalog = () => {
           </div>
 
           <a
-            href="#enquiry"
+            href="/enquiry"
             className="catalog-cta-button"
           >
             Discuss Your Requirement

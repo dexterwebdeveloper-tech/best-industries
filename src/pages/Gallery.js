@@ -334,7 +334,7 @@ const Gallery = () => {
         {/* =========================
             BOTTOM
         ========================= */}
-
+{/* 
         <div className="gallery-bottom">
 
           <span>
@@ -348,7 +348,7 @@ const Gallery = () => {
 
           <div className="gallery-bottom-line"></div>
 
-        </div>
+        </div> */}
 
       </div>
 

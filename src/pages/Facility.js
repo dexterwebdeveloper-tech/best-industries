@@ -370,9 +370,9 @@ const Facility = () => {
 
               <div className="facility-card-bottom">
 
-                <span>
+                {/* <span>
                   VIEW CAPABILITY
-                </span>
+                </span> */}
 
                 <span className="facility-arrow">
                   ↗

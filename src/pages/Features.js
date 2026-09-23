@@ -194,7 +194,7 @@ const Features = () => {
 
           {/* ================= CLIENT LOGOS ================= */}
 
-          <div className="col-lg-12">
+          {/* <div className="col-lg-12">
             <div className="company-slider-box wow fadeInUp">
 
               <div className="company-slider-title">
@@ -257,7 +257,139 @@ const Features = () => {
               </Swiper>
 
             </div>
-          </div>
+          </div> */}
+
+          {/* ================= CLIENT LOGOS ================= */}
+
+<div className="col-12">
+  <div className="bi-client-showcase wow fadeInUp">
+
+    {/* Header */}
+    <div className="bi-client-showcase-header">
+
+      <div className="bi-client-showcase-heading">
+
+        <span className="bi-client-eyebrow">
+          OUR CLIENTS
+        </span>
+
+        <h3>
+          Trusted by Leading Industrial &amp;
+          Manufacturing Companies
+        </h3>
+
+      </div>
+
+      <div className="bi-client-showcase-line">
+        <span></span>
+      </div>
+
+    </div>
+
+
+    {/* Slider */}
+    <div className="bi-client-slider-wrapper">
+
+      <Swiper
+        modules={[Autoplay]}
+        loop={true}
+        speed={900}
+        autoplay={{
+          delay: 1800,
+          disableOnInteraction: false,
+          pauseOnMouseEnter: true,
+        }}
+        spaceBetween={18}
+        grabCursor={true}
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 10,
+          },
+
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 14,
+          },
+
+          576: {
+            slidesPerView: 3,
+            spaceBetween: 14,
+          },
+
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 16,
+          },
+
+          992: {
+            slidesPerView: 5,
+            spaceBetween: 18,
+          },
+
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 20,
+          },
+        }}
+        className="bi-client-swiper"
+      >
+
+        {logos.map((logo, index) => (
+          <SwiperSlide key={index}>
+
+            <div className="bi-client-logo-card">
+
+              <div className="bi-client-logo-inner">
+
+                <img
+                  src={logo.image}
+                  alt={`${logo.name} - Best Industries Client`}
+                  title={logo.name}
+                  loading="lazy"
+                />
+
+              </div>
+
+              <span className="bi-client-logo-name">
+                {logo.name}
+              </span>
+
+            </div>
+
+          </SwiperSlide>
+        ))}
+
+      </Swiper>
+
+    </div>
+
+
+    {/* Bottom */}
+    <div className="bi-client-showcase-bottom">
+
+      <div className="bi-client-trust-text">
+        <span className="bi-client-trust-dot"></span>
+
+        <p>
+          Building reliable industrial partnerships through
+          quality, precision and dependable service.
+        </p>
+      </div>
+
+      <Link
+        to="/contact-us"
+        className="bi-client-contact-link"
+      >
+        Work With Us
+
+        <i className="fa-solid fa-arrow-right"></i>
+      </Link>
+
+    </div>
+
+  </div>
+</div>
 
         </div>
       </div>

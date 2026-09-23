@@ -234,7 +234,7 @@ const Products = () => {
         );
 
   return (
-    <section className="bi-products">
+    <section className="bi-products  bgh">
 
       {/* =========================================
           HERO
@@ -471,7 +471,7 @@ const Products = () => {
               component or industrial solution.
             </p>
 
-            <a href="/contact" className="bi-products-custom-btn">
+            <a href="/contact-us" className="bi-products-custom-btn">
               Discuss Your Requirement
               <span>↗</span>
             </a>

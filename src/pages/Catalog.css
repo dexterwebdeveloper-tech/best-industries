@@ -329,7 +329,7 @@
 .catalog-content h3 {
   margin: 0 0 9px;
 
-  color: #17202a;
+  color: #e61409;
 
   font-size: 21px;
 
@@ -337,7 +337,7 @@
 }
 
 .catalog-content p {
-  min-height: 48px;
+  /* min-height: 48px; */
 
   margin: 0 0 20px;
 
