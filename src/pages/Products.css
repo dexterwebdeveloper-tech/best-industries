@@ -1163,7 +1163,7 @@
   .bi-products-hero h1 {
     font-size: 63px;
 
-    letter-spacing: -5px;
+    /* letter-spacing: -5px; */
   }
 
   .bi-products-hero p {
