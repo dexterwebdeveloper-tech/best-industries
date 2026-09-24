@@ -428,7 +428,7 @@ const Footer = () => {
 
 
               {/* Social */}
-              <div className="bi-footer__social">
+              {/* <div className="bi-footer__social">
 
                 <a
                   href="#"
@@ -454,7 +454,7 @@ const Footer = () => {
                   <i className="fa-brands fa-linkedin-in"></i>
                 </a>
 
-              </div>
+              </div> */}
 
             </div>
 
